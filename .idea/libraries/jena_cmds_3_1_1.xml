@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jena-cmds-3.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/SemanicLibs/jena-cmds-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
