@@ -1,10 +1,11 @@
-[DEBUG] 2016-11-17 18:22:11,092 -- Jena initialization
-[DEBUG] 2016-11-17 18:22:11,139 -- Add location: LocatorFile
-[DEBUG] 2016-11-17 18:22:11,140 -- Add location: ClassLoaderLocator
-[DEBUG] 2016-11-17 18:22:11,141 -- Failed to find configuration: file:location-mapping.rdf;file:location-mapping.n3;file:location-mapping.ttl;file:etc/location-mapping.rdf;file:etc/location-mapping.n3;file:etc/location-mapping.ttl
-[DEBUG] 2016-11-17 18:22:11,141 -- Add location: LocatorFile
-[DEBUG] 2016-11-17 18:22:11,142 -- Add location: LocatorURL
-[DEBUG] 2016-11-17 18:22:11,142 -- Add location: ClassLoaderLocator
-[DEBUG] 2016-11-17 18:22:11,146 -- Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
-[DEBUG] 2016-11-17 18:22:11,412 -- System architecture: 32 bit
-[ERROR] 2016-11-17 18:22:13,837 -- [line: 585074, col: 120] Bad character in IRI (space): <http://www.freebase.com/viewOrgasmic[space]...>
+[DEBUG] 2016-11-19 18:59:11,119 -- Jena initialization
+[DEBUG] 2016-11-19 18:59:11,193 -- Add location: LocatorFile
+[DEBUG] 2016-11-19 18:59:11,193 -- Add location: ClassLoaderLocator
+[DEBUG] 2016-11-19 18:59:11,194 -- Failed to find configuration: file:location-mapping.rdf;file:location-mapping.n3;file:location-mapping.ttl;file:etc/location-mapping.rdf;file:etc/location-mapping.n3;file:etc/location-mapping.ttl
+[DEBUG] 2016-11-19 18:59:11,194 -- Add location: LocatorFile
+[DEBUG] 2016-11-19 18:59:11,195 -- Add location: LocatorURL
+[DEBUG] 2016-11-19 18:59:11,195 -- Add location: ClassLoaderLocator
+[DEBUG] 2016-11-19 18:59:11,198 -- Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
+[DEBUG] 2016-11-19 18:59:12,491 -- System architecture: 32 bit
+[DEBUG] 2016-11-19 18:59:16,162 -- Lock : main
+[DEBUG] 2016-11-19 18:59:16,162 -- Lock : main

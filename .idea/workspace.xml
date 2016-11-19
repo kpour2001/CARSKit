@@ -6,42 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="040e595e-1481-4baf-bd7d-9360e2589499" name="Default" comment="The first test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LDOS-CoMoDa.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/itemsMetadata.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/itemsMetadataFields.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Excel/commons-collections4-4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Excel/poi-3.15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Excel/poi-ooxml-3.15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Excel/poi-ooxml-schemas-3.15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Excel/xmlbeans-2.6.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-arq-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-base-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-cmds-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-core-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-iri-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-shaded-guava-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/SemanicLibs/jena-tdb-3.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jena_arq_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jena_cmds_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jena_core_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jena_iri_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jena_tdb_3_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/poi_3_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/xmlbeans_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa-description.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/itemsTitles.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carskit/preprocess/SearchInRDF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/carskit/preprocess/SimpleExcelReaderExample.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/slf4j-api-1.6.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/slf4j-log4j12-1.6.4.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="040e595e-1481-4baf-bd7d-9360e2589499" name="Default" comment="Nightly Build">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CARSKit.iml" afterPath="$PROJECT_DIR$/CARSKit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa-description.txt" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa-description.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/itemsTitles.csv" afterPath="$PROJECT_DIR$/context-aware_data_sets/LDOS-CoMoDa/itemsTitles.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java" afterPath="$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java" />
     </list>
     <ignored path="CARSKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +36,7 @@
       <file leaf-file-name="ContextAverage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/carskit/alg/baseline/avg/ContextAverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="0">
               <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="e#0#1432#0" expanded="false" />
@@ -78,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkMoviesToLinkedMDB.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LinkMoviesToLinkedMDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="433">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,13 +60,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchInRDF.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ResultBinding.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Desktop/apache-jena-3.1.1/lib/jena-arq-3.1.1.jar!/org/apache/jena/sparql/core/ResultBinding.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchInRDF.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SearchInRDF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="47" column="13" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1479394327654" expanded="true" signature="1446:1652" ph="..." />
               </folding>
             </state>
@@ -106,11 +85,9 @@
       <file leaf-file-name="SimpleExcelReaderExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SimpleExcelReaderExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="20" column="88" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,8 +133,9 @@
         <option value="$PROJECT_DIR$/src/carskit/alg/cars/transformation/prefiltering/ExactFiltering.java" />
         <option value="$PROJECT_DIR$/results_all_2016.txt" />
         <option value="$PROJECT_DIR$/src/carskit/preprocess/SimpleExcelReaderExample.java" />
-        <option value="$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java" />
         <option value="$PROJECT_DIR$/src/carskit/preprocess/SearchInRDF.java" />
+        <option value="$USER_HOME$/Desktop/apache-jena-3.1.1/lib/jena-arq-3.1.1.jar!/org/apache/jena/sparql/core/QuerySolutionBase.class" />
+        <option value="$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java" />
       </list>
     </option>
   </component>
@@ -297,9 +275,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -336,6 +311,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scratches">
         <subPane />
       </pane>
@@ -348,19 +326,19 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-jena-3.1.1/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/SemanicLibs" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/src/carskit/preprocess" />
-      <recent name="$PROJECT_DIR$/lib/Excel" />
-      <recent name="$PROJECT_DIR$/context-aware_data_sets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/Excel" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/SemanicLibs" />
+      <recent name="$PROJECT_DIR$/src/carskit/preprocess" />
+      <recent name="$PROJECT_DIR$/lib/Excel" />
+      <recent name="$PROJECT_DIR$/context-aware_data_sets" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SearchInRDF">
+  <component name="RunManager" selected="Application.LinkMoviesToLinkedMDB">
     <configuration default="false" name="CARSKit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -728,8 +706,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.SearchInRDF" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LinkMoviesToLinkedMDB" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LinkMoviesToLinkedMDB" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SearchInRDF" />
         <item index="2" class="java.lang.String" itemvalue="Application.SimpleExcelReaderExample" />
         <item index="3" class="java.lang.String" itemvalue="Application.CARSKit" />
       </list>
@@ -754,11 +732,19 @@
       <option name="presentableId" value="Default" />
       <updated>1462463493089</updated>
     </task>
+    <task id="LOCAL-00001" summary="Nightly Build">
+      <created>1479396303252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1479396303252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="875" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -777,7 +763,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -797,8 +783,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nightly Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nightly Build" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -806,27 +798,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/carskit/alg/baseline/cf/BPMF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/carskit/alg/cars/transformation/prefiltering/ExactFiltering.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/carskit/generic/Recommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13350">
-          <caret line="935" column="39" selection-start-line="935" selection-start-column="39" selection-end-line="935" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/carskit/alg/cars/transformation/prefiltering/SPF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3750">
@@ -1118,7 +1089,7 @@
     <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkdeMDB.java" />
     <entry file="file://$PROJECT_DIR$/src/carskit/alg/baseline/avg/ContextAverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="0">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="e#0#1432#0" expanded="false" />
@@ -1129,13 +1100,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java">
+    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SearchInRDF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="570">
+          <caret line="47" column="13" selection-start-line="23" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1479394327654" expanded="true" signature="1446:1652" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SimpleExcelReaderExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,23 +1129,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SimpleExcelReaderExample.java">
+    <entry file="jar://$USER_HOME$/Desktop/apache-jena-3.1.1/lib/jena-arq-3.1.1.jar!/org/apache/jena/sparql/core/ResultBinding.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="20" column="88" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="88" />
+        <state relative-caret-position="255">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/apache-jena-3.1.1/lib/jena-arq-3.1.1.jar!/org/apache/jena/sparql/core/QuerySolutionBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/SearchInRDF.java">
+    <entry file="jar://$USER_HOME$/Desktop/apache-jena-3.1.1/lib/jena-arq-3.1.1.jar!/org/apache/jena/sparql/core/Var.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/carskit/preprocess/LinkMoviesToLinkedMDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479394327654" expanded="true" signature="1446:1652" ph="..." />
           </folding>
         </state>
       </provider>
