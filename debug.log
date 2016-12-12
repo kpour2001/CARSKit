@@ -1,11 +1,552 @@
-[DEBUG] 2016-11-19 18:59:11,119 -- Jena initialization
-[DEBUG] 2016-11-19 18:59:11,193 -- Add location: LocatorFile
-[DEBUG] 2016-11-19 18:59:11,193 -- Add location: ClassLoaderLocator
-[DEBUG] 2016-11-19 18:59:11,194 -- Failed to find configuration: file:location-mapping.rdf;file:location-mapping.n3;file:location-mapping.ttl;file:etc/location-mapping.rdf;file:etc/location-mapping.n3;file:etc/location-mapping.ttl
-[DEBUG] 2016-11-19 18:59:11,194 -- Add location: LocatorFile
-[DEBUG] 2016-11-19 18:59:11,195 -- Add location: LocatorURL
-[DEBUG] 2016-11-19 18:59:11,195 -- Add location: ClassLoaderLocator
-[DEBUG] 2016-11-19 18:59:11,198 -- Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
-[DEBUG] 2016-11-19 18:59:12,491 -- System architecture: 32 bit
-[DEBUG] 2016-11-19 18:59:16,162 -- Lock : main
-[DEBUG] 2016-11-19 18:59:16,162 -- Lock : main
+[INFO ] 2016-12-10 19:46:35,466 -- WorkingPath: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/
+[INFO ] 2016-12-10 19:46:35,472 -- Your original rating data path: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa-ratings.txt
+[INFO ] 2016-12-10 19:46:35,472 -- Current working path: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/
+[WARN ] 2016-12-10 19:46:35,474 -- You rating data is in Compact format. CARSKit is working on transformation on the data format...
+[INFO ] 2016-12-10 19:46:35,560 -- Data transformaton completed (from Compact to Binary format). See new rating file: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/ratings_binary.txt
+[INFO ] 2016-12-10 19:46:35,573 -- Dataset: ...ARSKit.Workspace/ratings_binary.txt
+[INFO ] 2016-12-10 19:46:35,575 -- DataPath: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/ratings_binary.txt
+[INFO ] 2016-12-10 19:46:35,674 -- Rating data set has been successfully loaded.
+[INFO ] 2016-12-10 19:46:35,682 -- 
+/***********************************************************************************************************************
+ *
+ * Dataset: /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/ratings_binary.txt
+ * 
+ * Statistics of U-I-C Matrix:
+ * User amount: 121
+ * Item amount: 1232
+ * Rate amount: 2292
+ * Context dimensions: 8 (daytype, location, mood, physical, season, social, time, weather)
+ * Context conditions: 47 (daytype: 5, location: 5, mood: 5, physical: 4, season: 6, social: 9, time: 6, weather: 7)
+ * Context situations: 1016
+ * Data density: 0.0000%
+ * Scale distribution: [4.0 x 803, 1.0 x 69, 2.0 x 197, 5.0 x 719, 3.0 x 504]
+ * Average value of all ratings: 3.831588
+ * Standard deviation of all ratings: 1.058291
+ * Mode of all rating values: 4.000000
+ * Median of all rating values: 4.000000
+ *
+ ***********************************************************************************************************************/
+[INFO ] 2016-12-10 19:46:35,683 -- With Setup: cv -k 5 -p on --rand-seed 1 --test-view all
+[DEBUG] 2016-12-10 19:46:35,693 -- Fold [1]: training amount: 1833, test amount: 459
+[DEBUG] 2016-12-10 19:46:35,704 -- Fold [2]: training amount: 1834, test amount: 458
+[DEBUG] 2016-12-10 19:46:35,713 -- Fold [3]: training amount: 1833, test amount: 459
+[DEBUG] 2016-12-10 19:46:35,719 -- Fold [4]: training amount: 1834, test amount: 458
+[DEBUG] 2016-12-10 19:46:35,724 -- Fold [5]: training amount: 1834, test amount: 458
+[DEBUG] 2016-12-10 19:46:35,881 -- CAMF_CUCI fold [4] iter 1: loss = 1048.6017, delta_loss = -1048.6017, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,883 -- CAMF_CUCI fold [5] iter 1: loss = 1065.4169, delta_loss = -1065.4169, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,893 -- CAMF_CUCI fold [1] iter 1: loss = 1074.398, delta_loss = -1074.398, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,938 -- CAMF_CUCI fold [4] iter 2: loss = 619.3726, delta_loss = 429.22906, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,951 -- CAMF_CUCI fold [2] iter 1: loss = 1112.3428, delta_loss = -1112.3428, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,955 -- CAMF_CUCI fold [1] iter 2: loss = 645.44794, delta_loss = 428.95007, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,963 -- CAMF_CUCI fold [4] iter 3: loss = 412.83124, delta_loss = 206.54135, learn_rate = 0.021
+[DEBUG] 2016-12-10 19:46:35,972 -- CAMF_CUCI fold [5] iter 2: loss = 645.8919, delta_loss = 419.52502, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,977 -- CAMF_CUCI fold [2] iter 2: loss = 649.0323, delta_loss = 463.31042, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:35,991 -- CAMF_CUCI fold [4] iter 4: loss = 285.5366, delta_loss = 127.294655, learn_rate = 0.022049999
+[DEBUG] 2016-12-10 19:46:35,995 -- CAMF_CUCI fold [3] iter 1: loss = 1024.3582, delta_loss = -1024.3582, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:36,006 -- CAMF_CUCI fold [2] iter 3: loss = 425.10916, delta_loss = 223.92314, learn_rate = 0.021
+[DEBUG] 2016-12-10 19:46:36,010 -- CAMF_CUCI fold [5] iter 3: loss = 433.4812, delta_loss = 212.4107, learn_rate = 0.021
+[DEBUG] 2016-12-10 19:46:36,014 -- CAMF_CUCI fold [1] iter 3: loss = 432.11127, delta_loss = 213.33667, learn_rate = 0.021
+[DEBUG] 2016-12-10 19:46:36,021 -- CAMF_CUCI fold [4] iter 5: loss = 202.1548, delta_loss = 83.38179, learn_rate = 0.0231525
+[DEBUG] 2016-12-10 19:46:36,033 -- CAMF_CUCI fold [2] iter 4: loss = 289.1479, delta_loss = 135.96127, learn_rate = 0.022049999
+[DEBUG] 2016-12-10 19:46:36,057 -- CAMF_CUCI fold [5] iter 4: loss = 301.15167, delta_loss = 132.3295, learn_rate = 0.022049999
+[DEBUG] 2016-12-10 19:46:36,059 -- CAMF_CUCI fold [3] iter 2: loss = 609.9511, delta_loss = 414.40704, learn_rate = 0.02
+[DEBUG] 2016-12-10 19:46:36,063 -- CAMF_CUCI fold [1] iter 4: loss = 300.33386, delta_loss = 131.7774, learn_rate = 0.022049999
+[DEBUG] 2016-12-10 19:46:36,076 -- CAMF_CUCI fold [4] iter 6: loss = 145.74986, delta_loss = 56.40495, learn_rate = 0.024310125
+[DEBUG] 2016-12-10 19:46:36,083 -- CAMF_CUCI fold [2] iter 5: loss = 201.12213, delta_loss = 88.02574, learn_rate = 0.0231525
+[DEBUG] 2016-12-10 19:46:36,084 -- CAMF_CUCI fold [3] iter 3: loss = 404.55643, delta_loss = 205.39471, learn_rate = 0.021
+[DEBUG] 2016-12-10 19:46:36,093 -- CAMF_CUCI fold [5] iter 5: loss = 213.84737, delta_loss = 87.30433, learn_rate = 0.0231525
+[DEBUG] 2016-12-10 19:46:36,094 -- CAMF_CUCI fold [1] iter 5: loss = 213.42816, delta_loss = 86.90569, learn_rate = 0.0231525
+[DEBUG] 2016-12-10 19:46:36,108 -- CAMF_CUCI fold [4] iter 7: loss = 106.80105, delta_loss = 38.948807, learn_rate = 0.025525631
+[DEBUG] 2016-12-10 19:46:36,115 -- CAMF_CUCI fold [2] iter 6: loss = 142.22136, delta_loss = 58.900776, learn_rate = 0.024310125
+[DEBUG] 2016-12-10 19:46:36,118 -- CAMF_CUCI fold [3] iter 4: loss = 279.90738, delta_loss = 124.649055, learn_rate = 0.022049999
+[DEBUG] 2016-12-10 19:46:36,132 -- CAMF_CUCI fold [1] iter 6: loss = 154.08507, delta_loss = 59.3431, learn_rate = 0.024310125
+[DEBUG] 2016-12-10 19:46:36,133 -- CAMF_CUCI fold [5] iter 6: loss = 154.38254, delta_loss = 59.464817, learn_rate = 0.024310125
+[DEBUG] 2016-12-10 19:46:36,206 -- CAMF_CUCI fold [4] iter 8: loss = 79.492966, delta_loss = 27.30808, learn_rate = 0.026801912
+[DEBUG] 2016-12-10 19:46:36,206 -- CAMF_CUCI fold [1] iter 7: loss = 112.68397, delta_loss = 41.401096, learn_rate = 0.025525631
+[DEBUG] 2016-12-10 19:46:36,215 -- CAMF_CUCI fold [2] iter 7: loss = 102.010864, delta_loss = 40.210487, learn_rate = 0.025525631
+[DEBUG] 2016-12-10 19:46:36,224 -- CAMF_CUCI fold [3] iter 5: loss = 198.88919, delta_loss = 81.01819, learn_rate = 0.0231525
+[DEBUG] 2016-12-10 19:46:36,226 -- CAMF_CUCI fold [5] iter 7: loss = 113.042145, delta_loss = 41.340393, learn_rate = 0.025525631
+[DEBUG] 2016-12-10 19:46:36,226 -- CAMF_CUCI fold [1] iter 8: loss = 83.357994, delta_loss = 29.325974, learn_rate = 0.026801912
+[DEBUG] 2016-12-10 19:46:36,233 -- CAMF_CUCI fold [4] iter 9: loss = 60.09233, delta_loss = 19.400639, learn_rate = 0.028142007
+[DEBUG] 2016-12-10 19:46:36,239 -- CAMF_CUCI fold [2] iter 8: loss = 74.16472, delta_loss = 27.84615, learn_rate = 0.026801912
+[DEBUG] 2016-12-10 19:46:36,250 -- CAMF_CUCI fold [3] iter 6: loss = 144.17453, delta_loss = 54.714672, learn_rate = 0.024310125
+[DEBUG] 2016-12-10 19:46:36,251 -- CAMF_CUCI fold [1] iter 9: loss = 62.322926, delta_loss = 21.035065, learn_rate = 0.028142007
+[DEBUG] 2016-12-10 19:46:36,251 -- CAMF_CUCI fold [5] iter 8: loss = 83.87082, delta_loss = 29.171328, learn_rate = 0.026801912
+[DEBUG] 2016-12-10 19:46:36,254 -- CAMF_CUCI fold [4] iter 10: loss = 46.12776, delta_loss = 13.964566, learn_rate = 0.029549109
+[DEBUG] 2016-12-10 19:46:36,265 -- CAMF_CUCI fold [2] iter 9: loss = 54.64103, delta_loss = 19.52369, learn_rate = 0.028142007
+[DEBUG] 2016-12-10 19:46:36,279 -- CAMF_CUCI fold [3] iter 7: loss = 106.29056, delta_loss = 37.883965, learn_rate = 0.025525631
+[DEBUG] 2016-12-10 19:46:36,279 -- CAMF_CUCI fold [1] iter 10: loss = 47.056374, delta_loss = 15.266554, learn_rate = 0.029549109
+[DEBUG] 2016-12-10 19:46:36,279 -- CAMF_CUCI fold [4] iter 11: loss = 35.933815, delta_loss = 10.193948, learn_rate = 0.031026565
+[DEBUG] 2016-12-10 19:46:36,280 -- CAMF_CUCI fold [5] iter 9: loss = 63.020775, delta_loss = 20.850044, learn_rate = 0.028142007
+[DEBUG] 2016-12-10 19:46:36,304 -- CAMF_CUCI fold [4] iter 12: loss = 28.377907, delta_loss = 7.555908, learn_rate = 0.03257789
+[DEBUG] 2016-12-10 19:46:36,305 -- CAMF_CUCI fold [1] iter 11: loss = 35.845917, delta_loss = 11.210457, learn_rate = 0.031026565
+[DEBUG] 2016-12-10 19:46:36,304 -- CAMF_CUCI fold [3] iter 8: loss = 79.56303, delta_loss = 26.727533, learn_rate = 0.026801912
+[DEBUG] 2016-12-10 19:46:36,308 -- CAMF_CUCI fold [2] iter 10: loss = 40.77867, delta_loss = 13.862356, learn_rate = 0.029549109
+[DEBUG] 2016-12-10 19:46:36,311 -- CAMF_CUCI fold [5] iter 10: loss = 47.924095, delta_loss = 15.096682, learn_rate = 0.029549109
+[DEBUG] 2016-12-10 19:46:36,337 -- CAMF_CUCI fold [1] iter 12: loss = 27.517591, delta_loss = 8.328323, learn_rate = 0.03257789
+[DEBUG] 2016-12-10 19:46:36,337 -- CAMF_CUCI fold [4] iter 13: loss = 22.686737, delta_loss = 5.69117, learn_rate = 0.034206785
+[DEBUG] 2016-12-10 19:46:36,337 -- CAMF_CUCI fold [3] iter 9: loss = 60.39831, delta_loss = 19.164713, learn_rate = 0.028142007
+[DEBUG] 2016-12-10 19:46:36,365 -- CAMF_CUCI fold [5] iter 11: loss = 36.837395, delta_loss = 11.0867, learn_rate = 0.031026565
+[DEBUG] 2016-12-10 19:46:36,369 -- CAMF_CUCI fold [2] iter 11: loss = 30.799305, delta_loss = 9.979367, learn_rate = 0.031026565
+[DEBUG] 2016-12-10 19:46:36,385 -- CAMF_CUCI fold [1] iter 13: loss = 21.261871, delta_loss = 6.2557206, learn_rate = 0.034206785
+[DEBUG] 2016-12-10 19:46:36,386 -- CAMF_CUCI fold [4] iter 14: loss = 18.33097, delta_loss = 4.3557653, learn_rate = 0.035917126
+[DEBUG] 2016-12-10 19:46:36,387 -- CAMF_CUCI fold [3] iter 10: loss = 46.44288, delta_loss = 13.955432, learn_rate = 0.029549109
+[DEBUG] 2016-12-10 19:46:36,391 -- CAMF_CUCI fold [5] iter 12: loss = 28.569874, delta_loss = 8.267519, learn_rate = 0.03257789
+[DEBUG] 2016-12-10 19:46:36,393 -- CAMF_CUCI fold [2] iter 12: loss = 23.507948, delta_loss = 7.2913585, learn_rate = 0.03257789
+[DEBUG] 2016-12-10 19:46:36,411 -- CAMF_CUCI fold [1] iter 14: loss = 16.517313, delta_loss = 4.744557, learn_rate = 0.035917126
+[DEBUG] 2016-12-10 19:46:36,412 -- CAMF_CUCI fold [4] iter 15: loss = 14.946708, delta_loss = 3.384264, learn_rate = 0.037712984
+[DEBUG] 2016-12-10 19:46:36,413 -- CAMF_CUCI fold [3] iter 11: loss = 36.124542, delta_loss = 10.3183365, learn_rate = 0.031026565
+[DEBUG] 2016-12-10 19:46:36,417 -- CAMF_CUCI fold [2] iter 13: loss = 18.100554, delta_loss = 5.407393, learn_rate = 0.034206785
+[DEBUG] 2016-12-10 19:46:36,418 -- CAMF_CUCI fold [5] iter 13: loss = 22.30873, delta_loss = 6.261144, learn_rate = 0.034206785
+[DEBUG] 2016-12-10 19:46:36,437 -- CAMF_CUCI fold [1] iter 15: loss = 12.891103, delta_loss = 3.626211, learn_rate = 0.037712984
+[DEBUG] 2016-12-10 19:46:36,439 -- CAMF_CUCI fold [2] iter 14: loss = 14.035098, delta_loss = 4.065456, learn_rate = 0.035917126
+[DEBUG] 2016-12-10 19:46:36,440 -- CAMF_CUCI fold [4] iter 16: loss = 12.281571, delta_loss = 2.6651366, learn_rate = 0.039598633
+[DEBUG] 2016-12-10 19:46:36,440 -- CAMF_CUCI fold [3] iter 12: loss = 28.380806, delta_loss = 7.7437363, learn_rate = 0.03257789
+[DEBUG] 2016-12-10 19:46:36,444 -- CAMF_CUCI fold [5] iter 14: loss = 17.500597, delta_loss = 4.808132, learn_rate = 0.035917126
+[DEBUG] 2016-12-10 19:46:36,465 -- CAMF_CUCI fold [2] iter 15: loss = 10.94376, delta_loss = 3.0913382, learn_rate = 0.037712984
+[DEBUG] 2016-12-10 19:46:36,466 -- CAMF_CUCI fold [1] iter 16: loss = 10.104597, delta_loss = 2.7865062, learn_rate = 0.039598633
+[DEBUG] 2016-12-10 19:46:36,469 -- CAMF_CUCI fold [4] iter 17: loss = 10.157983, delta_loss = 2.123588, learn_rate = 0.04157856
+[DEBUG] 2016-12-10 19:46:36,469 -- CAMF_CUCI fold [3] iter 13: loss = 22.487812, delta_loss = 5.8929944, learn_rate = 0.034206785
+[DEBUG] 2016-12-10 19:46:36,473 -- CAMF_CUCI fold [5] iter 15: loss = 13.76835, delta_loss = 3.7322476, learn_rate = 0.037712984
+[DEBUG] 2016-12-10 19:46:36,488 -- CAMF_CUCI fold [2] iter 16: loss = 8.573399, delta_loss = 2.3703618, learn_rate = 0.039598633
+[DEBUG] 2016-12-10 19:46:36,492 -- CAMF_CUCI fold [1] iter 17: loss = 7.9564323, delta_loss = 2.1481643, learn_rate = 0.04157856
+[DEBUG] 2016-12-10 19:46:36,495 -- CAMF_CUCI fold [3] iter 14: loss = 17.947933, delta_loss = 4.539879, learn_rate = 0.035917126
+[DEBUG] 2016-12-10 19:46:36,495 -- CAMF_CUCI fold [4] iter 18: loss = 8.44853, delta_loss = 1.7094531, learn_rate = 0.04365749
+[DEBUG] 2016-12-10 19:46:36,510 -- CAMF_CUCI fold [5] iter 16: loss = 10.852264, delta_loss = 2.9160857, learn_rate = 0.039598633
+[DEBUG] 2016-12-10 19:46:36,526 -- CAMF_CUCI fold [2] iter 17: loss = 6.7459483, delta_loss = 1.82745, learn_rate = 0.04157856
+[DEBUG] 2016-12-10 19:46:36,530 -- CAMF_CUCI fold [1] iter 18: loss = 6.297989, delta_loss = 1.6584437, learn_rate = 0.04365749
+[DEBUG] 2016-12-10 19:46:36,534 -- CAMF_CUCI fold [3] iter 15: loss = 14.414199, delta_loss = 3.5337334, learn_rate = 0.037712984
+[DEBUG] 2016-12-10 19:46:36,537 -- CAMF_CUCI fold [5] iter 17: loss = 8.569065, delta_loss = 2.2831993, learn_rate = 0.04157856
+[DEBUG] 2016-12-10 19:46:36,541 -- CAMF_CUCI fold [4] iter 19: loss = 7.0597897, delta_loss = 1.3887404, learn_rate = 0.045840364
+[DEBUG] 2016-12-10 19:46:36,554 -- CAMF_CUCI fold [2] iter 18: loss = 5.3327537, delta_loss = 1.4131947, learn_rate = 0.04365749
+[DEBUG] 2016-12-10 19:46:36,565 -- CAMF_CUCI fold [5] iter 18: loss = 6.784361, delta_loss = 1.784704, learn_rate = 0.04365749
+[DEBUG] 2016-12-10 19:46:36,565 -- CAMF_CUCI fold [3] iter 16: loss = 11.639411, delta_loss = 2.7747877, learn_rate = 0.039598633
+[DEBUG] 2016-12-10 19:46:36,567 -- CAMF_CUCI fold [1] iter 19: loss = 5.017371, delta_loss = 1.2806177, learn_rate = 0.045840364
+[DEBUG] 2016-12-10 19:46:36,573 -- CAMF_CUCI fold [4] iter 20: loss = 5.9219103, delta_loss = 1.1378795, learn_rate = 0.048132382
+[DEBUG] 2016-12-10 19:46:36,585 -- CAMF_CUCI fold [2] iter 19: loss = 4.23834, delta_loss = 1.0944139, learn_rate = 0.045840364
+[DEBUG] 2016-12-10 19:46:36,591 -- CAMF_CUCI fold [3] iter 17: loss = 9.442585, delta_loss = 2.1968267, learn_rate = 0.04157856
+[DEBUG] 2016-12-10 19:46:36,592 -- CAMF_CUCI fold [5] iter 19: loss = 5.395018, delta_loss = 1.3893428, learn_rate = 0.045840364
+[DEBUG] 2016-12-10 19:46:36,599 -- CAMF_CUCI fold [1] iter 20: loss = 4.029039, delta_loss = 0.98833203, learn_rate = 0.048132382
+[DEBUG] 2016-12-10 19:46:36,601 -- CAMF_CUCI fold [4] iter 21: loss = 4.9819593, delta_loss = 0.9399507, learn_rate = 0.050539
+[DEBUG] 2016-12-10 19:46:36,613 -- CAMF_CUCI fold [2] iter 20: loss = 3.3902998, delta_loss = 0.84804004, learn_rate = 0.048132382
+[DEBUG] 2016-12-10 19:46:36,615 -- CAMF_CUCI fold [3] iter 18: loss = 7.687739, delta_loss = 1.754846, learn_rate = 0.04365749
+[DEBUG] 2016-12-10 19:46:36,616 -- CAMF_CUCI fold [5] iter 20: loss = 4.31864, delta_loss = 1.0763779, learn_rate = 0.048132382
+[DEBUG] 2016-12-10 19:46:36,628 -- CAMF_CUCI fold [1] iter 21: loss = 3.2669802, delta_loss = 0.7620589, learn_rate = 0.050539
+[DEBUG] 2016-12-10 19:46:36,629 -- CAMF_CUCI fold [4] iter 22: loss = 4.1996303, delta_loss = 0.7823292, learn_rate = 0.053065952
+[DEBUG] 2016-12-10 19:46:36,639 -- CAMF_CUCI fold [3] iter 19: loss = 6.2712393, delta_loss = 1.4164995, learn_rate = 0.045840364
+[DEBUG] 2016-12-10 19:46:36,640 -- CAMF_CUCI fold [2] iter 21: loss = 2.7329416, delta_loss = 0.65735817, learn_rate = 0.050539
+[DEBUG] 2016-12-10 19:46:36,641 -- CAMF_CUCI fold [5] iter 21: loss = 3.487808, delta_loss = 0.83083236, learn_rate = 0.050539
+[DEBUG] 2016-12-10 19:46:36,658 -- CAMF_CUCI fold [4] iter 23: loss = 3.5443401, delta_loss = 0.65529007, learn_rate = 0.05571925
+[DEBUG] 2016-12-10 19:46:36,660 -- CAMF_CUCI fold [1] iter 22: loss = 2.6800065, delta_loss = 0.58697355, learn_rate = 0.053065952
+[DEBUG] 2016-12-10 19:46:36,668 -- CAMF_CUCI fold [3] iter 20: loss = 5.114579, delta_loss = 1.15666, learn_rate = 0.048132382
+[DEBUG] 2016-12-10 19:46:36,668 -- CAMF_CUCI fold [5] iter 22: loss = 2.8471582, delta_loss = 0.64065003, learn_rate = 0.053065952
+[DEBUG] 2016-12-10 19:46:36,669 -- CAMF_CUCI fold [2] iter 22: loss = 2.2231486, delta_loss = 0.50979304, learn_rate = 0.053065952
+[DEBUG] 2016-12-10 19:46:36,686 -- CAMF_CUCI fold [4] iter 24: loss = 2.9931042, delta_loss = 0.5512359, learn_rate = 0.058505215
+[DEBUG] 2016-12-10 19:46:36,692 -- CAMF_CUCI fold [5] iter 23: loss = 2.3518488, delta_loss = 0.49530914, learn_rate = 0.05571925
+[DEBUG] 2016-12-10 19:46:36,693 -- CAMF_CUCI fold [1] iter 23: loss = 2.22831, delta_loss = 0.45169652, learn_rate = 0.05571925
+[DEBUG] 2016-12-10 19:46:36,694 -- CAMF_CUCI fold [2] iter 23: loss = 1.8275106, delta_loss = 0.39563793, learn_rate = 0.05571925
+[DEBUG] 2016-12-10 19:46:36,694 -- CAMF_CUCI fold [3] iter 21: loss = 4.160059, delta_loss = 0.9545205, learn_rate = 0.050539
+[DEBUG] 2016-12-10 19:46:36,704 -- CAMF_CUCI fold [4] iter 25: loss = 2.5288088, delta_loss = 0.4642952, learn_rate = 0.061430473
+[DEBUG] 2016-12-10 19:46:36,707 -- CAMF_CUCI fold [5] iter 24: loss = 1.9664618, delta_loss = 0.38538712, learn_rate = 0.058505215
+[DEBUG] 2016-12-10 19:46:36,712 -- CAMF_CUCI fold [2] iter 24: loss = 1.5202004, delta_loss = 0.30731022, learn_rate = 0.058505215
+[DEBUG] 2016-12-10 19:46:36,713 -- CAMF_CUCI fold [3] iter 22: loss = 3.3674412, delta_loss = 0.79261774, learn_rate = 0.053065952
+[DEBUG] 2016-12-10 19:46:36,718 -- CAMF_CUCI fold [1] iter 24: loss = 1.8808205, delta_loss = 0.3474896, learn_rate = 0.058505215
+[DEBUG] 2016-12-10 19:46:36,720 -- CAMF_CUCI fold [4] iter 26: loss = 2.1387026, delta_loss = 0.39010638, learn_rate = 0.064502
+[DEBUG] 2016-12-10 19:46:36,728 -- CAMF_CUCI fold [5] iter 25: loss = 1.6638614, delta_loss = 0.30260038, learn_rate = 0.061430473
+[DEBUG] 2016-12-10 19:46:36,734 -- CAMF_CUCI fold [2] iter 25: loss = 1.2813195, delta_loss = 0.23888083, learn_rate = 0.061430473
+[DEBUG] 2016-12-10 19:46:36,734 -- CAMF_CUCI fold [3] iter 23: loss = 2.7103713, delta_loss = 0.6570698, learn_rate = 0.05571925
+[DEBUG] 2016-12-10 19:46:36,740 -- CAMF_CUCI fold [1] iter 25: loss = 1.6131698, delta_loss = 0.26765075, learn_rate = 0.061430473
+[DEBUG] 2016-12-10 19:46:36,743 -- CAMF_CUCI fold [4] iter 27: loss = 1.8130478, delta_loss = 0.32565477, learn_rate = 0.0677271
+[DEBUG] 2016-12-10 19:46:36,745 -- CAMF_CUCI fold [5] iter 26: loss = 1.423894, delta_loss = 0.23996733, learn_rate = 0.064502
+[DEBUG] 2016-12-10 19:46:36,750 -- CAMF_CUCI fold [2] iter 26: loss = 1.0955789, delta_loss = 0.18574058, learn_rate = 0.064502
+[DEBUG] 2016-12-10 19:46:36,753 -- CAMF_CUCI fold [3] iter 24: loss = 2.1721075, delta_loss = 0.5382639, learn_rate = 0.058505215
+[DEBUG] 2016-12-10 19:46:36,754 -- CAMF_CUCI fold [1] iter 26: loss = 1.4061725, delta_loss = 0.2069972, learn_rate = 0.064502
+[DEBUG] 2016-12-10 19:46:36,769 -- CAMF_CUCI fold [5] iter 27: loss = 1.2319916, delta_loss = 0.19190246, learn_rate = 0.0677271
+[DEBUG] 2016-12-10 19:46:36,770 -- CAMF_CUCI fold [4] iter 28: loss = 1.5439726, delta_loss = 0.26907513, learn_rate = 0.07111345
+[DEBUG] 2016-12-10 19:46:36,778 -- CAMF_CUCI fold [2] iter 27: loss = 0.9512398, delta_loss = 0.1443391, learn_rate = 0.0677271
+[DEBUG] 2016-12-10 19:46:36,781 -- CAMF_CUCI fold [1] iter 27: loss = 1.2447474, delta_loss = 0.16142514, learn_rate = 0.0677271
+[DEBUG] 2016-12-10 19:46:36,782 -- CAMF_CUCI fold [3] iter 25: loss = 1.7408817, delta_loss = 0.43122563, learn_rate = 0.061430473
+[DEBUG] 2016-12-10 19:46:36,784 -- CAMF_CUCI fold [5] iter 28: loss = 1.0778072, delta_loss = 0.1541844, learn_rate = 0.07111345
+[DEBUG] 2016-12-10 19:46:36,788 -- CAMF_CUCI fold [4] iter 29: loss = 1.3245858, delta_loss = 0.2193868, learn_rate = 0.07466912
+[DEBUG] 2016-12-10 19:46:36,793 -- CAMF_CUCI fold [2] iter 28: loss = 0.839271, delta_loss = 0.11196887, learn_rate = 0.07111345
+[DEBUG] 2016-12-10 19:46:36,794 -- CAMF_CUCI fold [1] iter 28: loss = 1.1171705, delta_loss = 0.1275769, learn_rate = 0.07111345
+[DEBUG] 2016-12-10 19:46:36,797 -- CAMF_CUCI fold [5] iter 29: loss = 0.95399123, delta_loss = 0.12381601, learn_rate = 0.07466912
+[DEBUG] 2016-12-10 19:46:36,797 -- CAMF_CUCI fold [3] iter 26: loss = 1.4058105, delta_loss = 0.33507124, learn_rate = 0.064502
+[DEBUG] 2016-12-10 19:46:36,801 -- CAMF_CUCI fold [4] iter 30: loss = 1.1484056, delta_loss = 0.17618029, learn_rate = 0.07840258
+[DEBUG] 2016-12-10 19:46:36,805 -- CAMF_CUCI fold [1] iter 29: loss = 1.0145338, delta_loss = 0.10263673, learn_rate = 0.07466912
+[DEBUG] 2016-12-10 19:46:36,805 -- CAMF_CUCI fold [2] iter 29: loss = 0.75268745, delta_loss = 0.08658353, learn_rate = 0.07466912
+[DEBUG] 2016-12-10 19:46:36,806 -- CAMF_CUCI fold [5] iter 30: loss = 0.8551751, delta_loss = 0.098816134, learn_rate = 0.07840258
+[DEBUG] 2016-12-10 19:46:36,812 -- CAMF_CUCI fold [3] iter 27: loss = 1.1543885, delta_loss = 0.251422, learn_rate = 0.0677271
+[DEBUG] 2016-12-10 19:46:36,814 -- CAMF_CUCI fold [4] iter 31: loss = 1.0090964, delta_loss = 0.13930917, learn_rate = 0.08232271
+[DEBUG] 2016-12-10 19:46:36,815 -- CAMF_CUCI fold [5] iter 31: loss = 0.7771961, delta_loss = 0.07797898, learn_rate = 0.08232271
+[DEBUG] 2016-12-10 19:46:36,815 -- CAMF_CUCI fold [1] iter 30: loss = 0.9302912, delta_loss = 0.08424262, learn_rate = 0.07840258
+[DEBUG] 2016-12-10 19:46:36,817 -- CAMF_CUCI fold [2] iter 30: loss = 0.68604183, delta_loss = 0.06664561, learn_rate = 0.07840258
+[DEBUG] 2016-12-10 19:46:36,829 -- CAMF_CUCI fold [5] iter 32: loss = 0.7165675, delta_loss = 0.060628597, learn_rate = 0.08643884
+[DEBUG] 2016-12-10 19:46:36,829 -- CAMF_CUCI fold [4] iter 32: loss = 0.9004538, delta_loss = 0.10864261, learn_rate = 0.08643884
+[DEBUG] 2016-12-10 19:46:36,829 -- CAMF_CUCI fold [3] iter 28: loss = 0.9720655, delta_loss = 0.182323, learn_rate = 0.07111345
+[DEBUG] 2016-12-10 19:46:36,833 -- CAMF_CUCI fold [1] iter 31: loss = 0.85982174, delta_loss = 0.07046944, learn_rate = 0.08232271
+[DEBUG] 2016-12-10 19:46:36,833 -- CAMF_CUCI fold [2] iter 31: loss = 0.6350418, delta_loss = 0.051000096, learn_rate = 0.08232271
+[DEBUG] 2016-12-10 19:46:36,838 -- CAMF_CUCI fold [5] iter 33: loss = 0.6701746, delta_loss = 0.046392877, learn_rate = 0.09076079
+[DEBUG] 2016-12-10 19:46:36,840 -- CAMF_CUCI fold [4] iter 33: loss = 0.8165474, delta_loss = 0.083906405, learn_rate = 0.09076079
+[DEBUG] 2016-12-10 19:46:36,842 -- CAMF_CUCI fold [1] iter 32: loss = 0.7999923, delta_loss = 0.059829403, learn_rate = 0.08643884
+[DEBUG] 2016-12-10 19:46:36,843 -- CAMF_CUCI fold [3] iter 29: loss = 0.8434762, delta_loss = 0.12858935, learn_rate = 0.07466912
+[DEBUG] 2016-12-10 19:46:36,844 -- CAMF_CUCI fold [2] iter 32: loss = 0.5962694, delta_loss = 0.03877231, learn_rate = 0.08643884
+[DEBUG] 2016-12-10 19:46:36,847 -- CAMF_CUCI fold [5] iter 34: loss = 0.6351534, delta_loss = 0.035021223, learn_rate = 0.09529883
+[DEBUG] 2016-12-10 19:46:36,847 -- CAMF_CUCI fold [4] iter 34: loss = 0.7519378, delta_loss = 0.064609595, learn_rate = 0.09529883
+[DEBUG] 2016-12-10 19:46:36,851 -- CAMF_CUCI fold [1] iter 33: loss = 0.7487436, delta_loss = 0.051248733, learn_rate = 0.09076079
+[DEBUG] 2016-12-10 19:46:36,855 -- CAMF_CUCI fold [4] iter 35: loss = 0.7018978, delta_loss = 0.05003999, learn_rate = 0.10006377
+[DEBUG] 2016-12-10 19:46:36,855 -- CAMF_CUCI fold [5] iter 35: loss = 0.6088896, delta_loss = 0.026263839, learn_rate = 0.10006377
+[DEBUG] 2016-12-10 19:46:36,855 -- CAMF_CUCI fold [3] iter 30: loss = 0.7542534, delta_loss = 0.089222774, learn_rate = 0.07840258
+[DEBUG] 2016-12-10 19:46:36,856 -- CAMF_CUCI fold [2] iter 33: loss = 0.5669813, delta_loss = 0.02928814, learn_rate = 0.09076079
+[DEBUG] 2016-12-10 19:46:36,860 -- CAMF_CUCI fold [1] iter 34: loss = 0.70473725, delta_loss = 0.044006333, learn_rate = 0.09529883
+[DEBUG] 2016-12-10 19:46:36,863 -- CAMF_CUCI fold [4] iter 36: loss = 0.6625841, delta_loss = 0.03931365, learn_rate = 0.105066955
+[DEBUG] 2016-12-10 19:46:36,863 -- CAMF_CUCI fold [5] iter 36: loss = 0.5890728, delta_loss = 0.01981674, learn_rate = 0.105066955
+[DEBUG] 2016-12-10 19:46:36,867 -- CAMF_CUCI fold [2] iter 34: loss = 0.54496586, delta_loss = 0.022015456, learn_rate = 0.09529883
+[DEBUG] 2016-12-10 19:46:36,868 -- CAMF_CUCI fold [3] iter 31: loss = 0.6924196, delta_loss = 0.061833788, learn_rate = 0.08232271
+[DEBUG] 2016-12-10 19:46:36,869 -- CAMF_CUCI fold [1] iter 35: loss = 0.66709214, delta_loss = 0.03764508, learn_rate = 0.10006377
+[DEBUG] 2016-12-10 19:46:36,871 -- CAMF_CUCI fold [4] iter 37: loss = 0.6311183, delta_loss = 0.031465832, learn_rate = 0.11032031
+[DEBUG] 2016-12-10 19:46:36,872 -- CAMF_CUCI fold [5] iter 37: loss = 0.57375354, delta_loss = 0.015319309, learn_rate = 0.11032031
+[DEBUG] 2016-12-10 19:46:36,877 -- CAMF_CUCI fold [1] iter 36: loss = 0.6352121, delta_loss = 0.031880073, learn_rate = 0.105066955
+[DEBUG] 2016-12-10 19:46:36,878 -- CAMF_CUCI fold [4] iter 38: loss = 0.6055557, delta_loss = 0.025562596, learn_rate = 0.11583632
+[DEBUG] 2016-12-10 19:46:36,879 -- CAMF_CUCI fold [2] iter 35: loss = 0.52844155, delta_loss = 0.016524319, learn_rate = 0.10006377
+[DEBUG] 2016-12-10 19:46:36,880 -- CAMF_CUCI fold [3] iter 32: loss = 0.648925, delta_loss = 0.043494586, learn_rate = 0.08643884
+[DEBUG] 2016-12-10 19:46:36,880 -- CAMF_CUCI fold [5] iter 38: loss = 0.5613745, delta_loss = 0.012379052, learn_rate = 0.11583632
+[DEBUG] 2016-12-10 19:46:36,893 -- CAMF_CUCI fold [1] iter 37: loss = 0.60868496, delta_loss = 0.02652714, learn_rate = 0.11032031
+[DEBUG] 2016-12-10 19:46:36,894 -- CAMF_CUCI fold [4] iter 39: loss = 0.584754, delta_loss = 0.02080172, learn_rate = 0.121628135
+[DEBUG] 2016-12-10 19:46:36,898 -- CAMF_CUCI fold [5] iter 39: loss = 0.55077714, delta_loss = 0.010597312, learn_rate = 0.121628135
+[DEBUG] 2016-12-10 19:46:36,898 -- CAMF_CUCI fold [2] iter 36: loss = 0.5159794, delta_loss = 0.012462093, learn_rate = 0.105066955
+[DEBUG] 2016-12-10 19:46:36,899 -- CAMF_CUCI fold [3] iter 33: loss = 0.6174606, delta_loss = 0.03146443, learn_rate = 0.09076079
+[DEBUG] 2016-12-10 19:46:36,901 -- CAMF_CUCI fold [1] iter 38: loss = 0.5872214, delta_loss = 0.021463549, learn_rate = 0.11583632
+[DEBUG] 2016-12-10 19:46:36,901 -- CAMF_CUCI fold [4] iter 40: loss = 0.56818277, delta_loss = 0.016571201, learn_rate = 0.12770954
+[DEBUG] 2016-12-10 19:46:36,907 -- CAMF_CUCI fold [5] iter 40: loss = 0.5411994, delta_loss = 0.009577763, learn_rate = 0.12770954
+[DEBUG] 2016-12-10 19:46:36,910 -- CAMF_CUCI fold [1] iter 39: loss = 0.57060313, delta_loss = 0.016618267, learn_rate = 0.121628135
+[DEBUG] 2016-12-10 19:46:36,910 -- CAMF_CUCI fold [4] iter 41: loss = 0.55573386, delta_loss = 0.012448931, learn_rate = 0.13409501
+[DEBUG] 2016-12-10 19:46:36,910 -- CAMF_CUCI fold [2] iter 37: loss = 0.5064413, delta_loss = 0.00953814, learn_rate = 0.11032031
+[DEBUG] 2016-12-10 19:46:36,911 -- CAMF_CUCI fold [3] iter 34: loss = 0.5939011, delta_loss = 0.023559486, learn_rate = 0.09529883
+[DEBUG] 2016-12-10 19:46:36,916 -- CAMF_CUCI fold [5] iter 41: loss = 0.5322891, delta_loss = 0.008910295, learn_rate = 0.13409501
+[DEBUG] 2016-12-10 19:46:36,918 -- CAMF_CUCI fold [4] iter 42: loss = 0.54758453, delta_loss = 0.008149304, learn_rate = 0.14079978
+[DEBUG] 2016-12-10 19:46:36,920 -- CAMF_CUCI fold [1] iter 40: loss = 0.5586255, delta_loss = 0.011977599, learn_rate = 0.12770954
+[DEBUG] 2016-12-10 19:46:36,923 -- CAMF_CUCI fold [2] iter 38: loss = 0.49892935, delta_loss = 0.007511946, learn_rate = 0.11583632
+[DEBUG] 2016-12-10 19:46:36,924 -- CAMF_CUCI fold [3] iter 35: loss = 0.5756771, delta_loss = 0.018224005, learn_rate = 0.10006377
+[DEBUG] 2016-12-10 19:46:36,928 -- CAMF_CUCI fold [4] iter 43: loss = 0.54414725, delta_loss = 0.0034372965, learn_rate = 0.14783975
+[DEBUG] 2016-12-10 19:46:36,928 -- CAMF_CUCI fold [5] iter 42: loss = 0.5241601, delta_loss = 0.008129011, learn_rate = 0.14079978
+[DEBUG] 2016-12-10 19:46:36,931 -- CAMF_CUCI fold [1] iter 41: loss = 0.5510379, delta_loss = 0.007587618, learn_rate = 0.13409501
+[DEBUG] 2016-12-10 19:46:36,935 -- CAMF_CUCI fold [2] iter 39: loss = 0.49274966, delta_loss = 0.0061796806, learn_rate = 0.121628135
+[DEBUG] 2016-12-10 19:46:36,937 -- CAMF_CUCI fold [3] iter 36: loss = 0.5612267, delta_loss = 0.0144503545, learn_rate = 0.105066955
+[DEBUG] 2016-12-10 19:46:36,940 -- CAMF_CUCI fold [5] iter 43: loss = 0.5175206, delta_loss = 0.00663944, learn_rate = 0.14783975
+[DEBUG] 2016-12-10 19:46:36,944 -- CAMF_CUCI fold [4] iter 44: loss = 0.5461251, delta_loss = -0.0019778542, learn_rate = 0.15523174
+[DEBUG] 2016-12-10 19:46:36,947 -- CAMF_CUCI fold [1] iter 42: loss = 0.5474987, delta_loss = 0.0035392179, learn_rate = 0.14079978
+[DEBUG] 2016-12-10 19:46:36,952 -- CAMF_CUCI fold [2] iter 40: loss = 0.48739207, delta_loss = 0.005357605, learn_rate = 0.12770954
+[DEBUG] 2016-12-10 19:46:36,953 -- CAMF_CUCI fold [3] iter 37: loss = 0.54957294, delta_loss = 0.011653813, learn_rate = 0.11032031
+[DEBUG] 2016-12-10 19:46:36,953 -- CAMF_CUCI fold [5] iter 44: loss = 0.51392925, delta_loss = 0.003591408, learn_rate = 0.15523174
+[DEBUG] 2016-12-10 19:46:36,954 -- CAMF_CUCI fold [4] iter 45: loss = 0.6937412, delta_loss = -0.14761609, learn_rate = 0.07761587
+[DEBUG] 2016-12-10 19:46:36,957 -- CAMF_CUCI fold [1] iter 43: loss = 0.54756325, delta_loss = -6.452952E-5, learn_rate = 0.14783975
+[DEBUG] 2016-12-10 19:46:36,963 -- CAMF_CUCI fold [2] iter 41: loss = 0.48252636, delta_loss = 0.0048657088, learn_rate = 0.13409501
+[DEBUG] 2016-12-10 19:46:36,963 -- CAMF_CUCI fold [4] iter 46: loss = 1.0768807, delta_loss = -0.38313946, learn_rate = 0.038807936
+[DEBUG] 2016-12-10 19:46:36,964 -- CAMF_CUCI fold [3] iter 38: loss = 0.5400315, delta_loss = 0.009541427, learn_rate = 0.11583632
+[DEBUG] 2016-12-10 19:46:36,964 -- CAMF_CUCI fold [5] iter 45: loss = 0.51630527, delta_loss = -0.0023760262, learn_rate = 0.16299334
+[DEBUG] 2016-12-10 19:46:36,968 -- CAMF_CUCI fold [1] iter 44: loss = 0.656771, delta_loss = -0.109207794, learn_rate = 0.07391988
+[DEBUG] 2016-12-10 19:46:36,975 -- CAMF_CUCI fold [4] iter 47: loss = 2.0258217, delta_loss = -0.9489411, learn_rate = 0.019403968
+[DEBUG] 2016-12-10 19:46:36,977 -- CAMF_CUCI fold [5] iter 46: loss = 0.6203295, delta_loss = -0.104024224, learn_rate = 0.08149667
+[DEBUG] 2016-12-10 19:46:36,978 -- CAMF_CUCI fold [2] iter 42: loss = 0.47800687, delta_loss = 0.0045195, learn_rate = 0.14079978
+[DEBUG] 2016-12-10 19:46:36,978 -- CAMF_CUCI fold [1] iter 45: loss = 0.9477797, delta_loss = -0.2910087, learn_rate = 0.03695994
+[DEBUG] 2016-12-10 19:46:36,979 -- CAMF_CUCI fold [3] iter 39: loss = 0.532051, delta_loss = 0.007980478, learn_rate = 0.121628135
+[DEBUG] 2016-12-10 19:46:36,983 -- CAMF_CUCI fold [4] iter 48: loss = 3.7309928, delta_loss = -1.705171, learn_rate = 0.009701984
+[DEBUG] 2016-12-10 19:46:36,987 -- CAMF_CUCI fold [5] iter 47: loss = 0.8875853, delta_loss = -0.26725578, learn_rate = 0.040748335
+[DEBUG] 2016-12-10 19:46:36,987 -- CAMF_CUCI fold [1] iter 46: loss = 1.6222308, delta_loss = -0.674451, learn_rate = 0.01847997
+[DEBUG] 2016-12-10 19:46:36,992 -- CAMF_CUCI fold [2] iter 43: loss = 0.4738682, delta_loss = 0.0041386555, learn_rate = 0.14783975
+[DEBUG] 2016-12-10 19:46:36,992 -- CAMF_CUCI fold [3] iter 40: loss = 0.5251748, delta_loss = 0.0068762116, learn_rate = 0.12770954
+[DEBUG] 2016-12-10 19:46:36,994 -- CAMF_CUCI fold [4] iter 49: loss = 5.331278, delta_loss = -1.6002853, learn_rate = 0.004850992
+[DEBUG] 2016-12-10 19:46:36,997 -- CAMF_CUCI fold [5] iter 48: loss = 1.6247413, delta_loss = -0.73715603, learn_rate = 0.020374168
+[DEBUG] 2016-12-10 19:46:36,997 -- CAMF_CUCI fold [1] iter 47: loss = 2.779264, delta_loss = -1.1570333, learn_rate = 0.009239985
+[DEBUG] 2016-12-10 19:46:37,003 -- CAMF_CUCI fold [4] iter 50: loss = 5.7519383, delta_loss = -0.4206601, learn_rate = 0.002425496
+[DEBUG] 2016-12-10 19:46:37,005 -- CAMF_CUCI fold [2] iter 44: loss = 0.47029245, delta_loss = 0.003575758, learn_rate = 0.15523174
+[DEBUG] 2016-12-10 19:46:37,006 -- CAMF_CUCI fold [3] iter 41: loss = 0.5190882, delta_loss = 0.0060866396, learn_rate = 0.13409501
+[DEBUG] 2016-12-10 19:46:37,008 -- CAMF_CUCI fold [5] iter 49: loss = 3.0201757, delta_loss = -1.3954344, learn_rate = 0.010187084
+[DEBUG] 2016-12-10 19:46:37,008 -- CAMF_CUCI fold [1] iter 48: loss = 3.9555814, delta_loss = -1.1763173, learn_rate = 0.0046199923
+[DEBUG] 2016-12-10 19:46:37,015 -- CAMF_CUCI fold [4] iter 51: loss = 5.5742607, delta_loss = 0.17767751, learn_rate = 0.001212748
+[DEBUG] 2016-12-10 19:46:37,019 -- CAMF_CUCI fold [1] iter 49: loss = 4.3785105, delta_loss = -0.422929, learn_rate = 0.0023099962
+[DEBUG] 2016-12-10 19:46:37,019 -- CAMF_CUCI fold [2] iter 45: loss = 0.46753582, delta_loss = 0.0027566191, learn_rate = 0.16299334
+[DEBUG] 2016-12-10 19:46:37,019 -- CAMF_CUCI fold [5] iter 50: loss = 4.237313, delta_loss = -1.2171372, learn_rate = 0.005093542
+[DEBUG] 2016-12-10 19:46:37,021 -- CAMF_CUCI fold [3] iter 42: loss = 0.513683, delta_loss = 0.0054051834, learn_rate = 0.14079978
+[DEBUG] 2016-12-10 19:46:37,026 -- CAMF_CUCI fold [4] iter 52: loss = 5.279048, delta_loss = 0.29521254, learn_rate = 0.0012733855
+[DEBUG] 2016-12-10 19:46:37,030 -- CAMF_CUCI fold [1] iter 50: loss = 4.2359414, delta_loss = 0.14256874, learn_rate = 0.0011549981
+[DEBUG] 2016-12-10 19:46:37,032 -- CAMF_CUCI fold [5] iter 51: loss = 4.5185447, delta_loss = -0.28123155, learn_rate = 0.002546771
+[DEBUG] 2016-12-10 19:46:37,044 -- CAMF_CUCI fold [2] iter 46: loss = 0.465827, delta_loss = 0.0017088341, learn_rate = 0.171143
+[DEBUG] 2016-12-10 19:46:37,045 -- CAMF_CUCI fold [3] iter 43: loss = 0.5090707, delta_loss = 0.00461232, learn_rate = 0.14783975
+[DEBUG] 2016-12-10 19:46:37,046 -- CAMF_CUCI fold [4] iter 53: loss = 5.0467734, delta_loss = 0.2322745, learn_rate = 0.0013370547
+[DEBUG] 2016-12-10 19:46:37,049 -- CAMF_CUCI fold [1] iter 51: loss = 3.9846063, delta_loss = 0.25133532, learn_rate = 0.001212748
+[DEBUG] 2016-12-10 19:46:37,053 -- CAMF_CUCI fold [2] iter 47: loss = 0.46528807, delta_loss = 5.389229E-4, learn_rate = 0.17970015
+[DEBUG] 2016-12-10 19:46:37,054 -- CAMF_CUCI fold [4] iter 54: loss = 4.8401423, delta_loss = 0.20663151, learn_rate = 0.0014039074
+[DEBUG] 2016-12-10 19:46:37,054 -- CAMF_CUCI fold [5] iter 52: loss = 4.320707, delta_loss = 0.19783744, learn_rate = 0.0012733855
+[DEBUG] 2016-12-10 19:46:37,056 -- CAMF_CUCI fold [3] iter 44: loss = 0.50553143, delta_loss = 0.0035392237, learn_rate = 0.15523174
+[DEBUG] 2016-12-10 19:46:37,058 -- CAMF_CUCI fold [1] iter 52: loss = 3.8112144, delta_loss = 0.17339179, learn_rate = 0.0012733855
+[DEBUG] 2016-12-10 19:46:37,062 -- CAMF_CUCI fold [4] iter 55: loss = 4.650106, delta_loss = 0.19003634, learn_rate = 0.0014741028
+[DEBUG] 2016-12-10 19:46:37,062 -- CAMF_CUCI fold [2] iter 48: loss = 0.46601483, delta_loss = -7.267576E-4, learn_rate = 0.18868516
+[DEBUG] 2016-12-10 19:46:37,066 -- CAMF_CUCI fold [1] iter 53: loss = 3.6645205, delta_loss = 0.146694, learn_rate = 0.0013370547
+[DEBUG] 2016-12-10 19:46:37,066 -- CAMF_CUCI fold [5] iter 53: loss = 4.0502133, delta_loss = 0.27049378, learn_rate = 0.0013370547
+[DEBUG] 2016-12-10 19:46:37,069 -- CAMF_CUCI fold [3] iter 45: loss = 0.50350887, delta_loss = 0.0020225856, learn_rate = 0.16299334
+[DEBUG] 2016-12-10 19:46:37,070 -- CAMF_CUCI fold [4] iter 56: loss = 4.4724507, delta_loss = 0.17765516, learn_rate = 0.001547808
+[DEBUG] 2016-12-10 19:46:37,072 -- CAMF_CUCI fold [2] iter 49: loss = 0.5362352, delta_loss = -0.07022038, learn_rate = 0.09434258
+[DEBUG] 2016-12-10 19:46:37,074 -- CAMF_CUCI fold [1] iter 54: loss = 3.5328207, delta_loss = 0.13169971, learn_rate = 0.0014039074
+[DEBUG] 2016-12-10 19:46:37,077 -- CAMF_CUCI fold [4] iter 57: loss = 4.30447, delta_loss = 0.16798045, learn_rate = 0.0016251983
+[DEBUG] 2016-12-10 19:46:37,078 -- CAMF_CUCI fold [5] iter 54: loss = 3.8622, delta_loss = 0.18801327, learn_rate = 0.0014039074
+[DEBUG] 2016-12-10 19:46:37,080 -- CAMF_CUCI fold [3] iter 46: loss = 0.5039228, delta_loss = -4.139333E-4, learn_rate = 0.171143
+[DEBUG] 2016-12-10 19:46:37,080 -- CAMF_CUCI fold [2] iter 50: loss = 0.7113836, delta_loss = -0.1751484, learn_rate = 0.04717129
+[DEBUG] 2016-12-10 19:46:37,082 -- CAMF_CUCI fold [1] iter 55: loss = 3.4113522, delta_loss = 0.12146874, learn_rate = 0.0014741028
+[DEBUG] 2016-12-10 19:46:37,085 -- CAMF_CUCI fold [4] iter 58: loss = 4.144214, delta_loss = 0.16025615, learn_rate = 0.0017064583
+[DEBUG] 2016-12-10 19:46:37,088 -- CAMF_CUCI fold [2] iter 51: loss = 1.188084, delta_loss = -0.47670045, learn_rate = 0.023585645
+[DEBUG] 2016-12-10 19:46:37,089 -- CAMF_CUCI fold [1] iter 56: loss = 3.297348, delta_loss = 0.114003986, learn_rate = 0.001547808
+[DEBUG] 2016-12-10 19:46:37,090 -- CAMF_CUCI fold [5] iter 55: loss = 3.7031448, delta_loss = 0.15905516, learn_rate = 0.0014741028
+[DEBUG] 2016-12-10 19:46:37,091 -- CAMF_CUCI fold [3] iter 47: loss = 0.59095734, delta_loss = -0.087034546, learn_rate = 0.0855715
+[DEBUG] 2016-12-10 19:46:37,093 -- CAMF_CUCI fold [4] iter 59: loss = 3.990219, delta_loss = 0.15399486, learn_rate = 0.0017917812
+[DEBUG] 2016-12-10 19:46:37,096 -- CAMF_CUCI fold [2] iter 52: loss = 2.145432, delta_loss = -0.9573479, learn_rate = 0.011792823
+[DEBUG] 2016-12-10 19:46:37,097 -- CAMF_CUCI fold [1] iter 57: loss = 3.188921, delta_loss = 0.108427055, learn_rate = 0.0016251983
+[DEBUG] 2016-12-10 19:46:37,100 -- CAMF_CUCI fold [4] iter 60: loss = 3.841379, delta_loss = 0.14884032, learn_rate = 0.0018813702
+[DEBUG] 2016-12-10 19:46:37,102 -- CAMF_CUCI fold [5] iter 56: loss = 3.5603065, delta_loss = 0.14283837, learn_rate = 0.001547808
+[DEBUG] 2016-12-10 19:46:37,103 -- CAMF_CUCI fold [3] iter 48: loss = 0.800809, delta_loss = -0.20985167, learn_rate = 0.04278575
+[DEBUG] 2016-12-10 19:46:37,105 -- CAMF_CUCI fold [2] iter 53: loss = 3.2281659, delta_loss = -1.0827338, learn_rate = 0.0058964114
+[DEBUG] 2016-12-10 19:46:37,105 -- CAMF_CUCI fold [1] iter 58: loss = 3.084708, delta_loss = 0.10421293, learn_rate = 0.0017064583
+[DEBUG] 2016-12-10 19:46:37,108 -- CAMF_CUCI fold [4] iter 61: loss = 3.6968632, delta_loss = 0.14451578, learn_rate = 0.0019754388
+[DEBUG] 2016-12-10 19:46:37,113 -- CAMF_CUCI fold [2] iter 54: loss = 3.6244385, delta_loss = -0.3962728, learn_rate = 0.0029482057
+[DEBUG] 2016-12-10 19:46:37,113 -- CAMF_CUCI fold [1] iter 59: loss = 2.9837184, delta_loss = 0.100989625, learn_rate = 0.0017917812
+[DEBUG] 2016-12-10 19:46:37,114 -- CAMF_CUCI fold [5] iter 57: loss = 3.4284387, delta_loss = 0.13186792, learn_rate = 0.0016251983
+[DEBUG] 2016-12-10 19:46:37,114 -- CAMF_CUCI fold [3] iter 49: loss = 1.3312652, delta_loss = -0.53045624, learn_rate = 0.021392874
+[DEBUG] 2016-12-10 19:46:37,116 -- CAMF_CUCI fold [4] iter 62: loss = 3.5560627, delta_loss = 0.14080045, learn_rate = 0.0020742107
+[DEBUG] 2016-12-10 19:46:37,122 -- CAMF_CUCI fold [2] iter 55: loss = 3.4972436, delta_loss = 0.12719494, learn_rate = 0.0014741028
+[DEBUG] 2016-12-10 19:46:37,122 -- CAMF_CUCI fold [1] iter 60: loss = 2.8852432, delta_loss = 0.09847537, learn_rate = 0.0018813702
+[DEBUG] 2016-12-10 19:46:37,125 -- CAMF_CUCI fold [4] iter 63: loss = 3.4185457, delta_loss = 0.13751684, learn_rate = 0.0021779211
+[DEBUG] 2016-12-10 19:46:37,126 -- CAMF_CUCI fold [3] iter 50: loss = 2.4444022, delta_loss = -1.1131371, learn_rate = 0.010696437
+[DEBUG] 2016-12-10 19:46:37,126 -- CAMF_CUCI fold [5] iter 58: loss = 3.304569, delta_loss = 0.12386958, learn_rate = 0.0017064583
+[DEBUG] 2016-12-10 19:46:37,134 -- CAMF_CUCI fold [2] iter 56: loss = 3.2534983, delta_loss = 0.24374527, learn_rate = 0.001547808
+[DEBUG] 2016-12-10 19:46:37,135 -- CAMF_CUCI fold [1] iter 61: loss = 2.7887897, delta_loss = 0.09645322, learn_rate = 0.0019754388
+[DEBUG] 2016-12-10 19:46:37,136 -- CAMF_CUCI fold [5] iter 59: loss = 3.186739, delta_loss = 0.117829956, learn_rate = 0.0017917812
+[DEBUG] 2016-12-10 19:46:37,136 -- CAMF_CUCI fold [4] iter 64: loss = 3.2840228, delta_loss = 0.13452303, learn_rate = 0.0022868172
+[DEBUG] 2016-12-10 19:46:37,143 -- CAMF_CUCI fold [3] iter 51: loss = 3.9187772, delta_loss = -1.4743749, learn_rate = 0.0053482186
+[DEBUG] 2016-12-10 19:46:37,151 -- CAMF_CUCI fold [2] iter 57: loss = 3.0939507, delta_loss = 0.15954766, learn_rate = 0.0016251983
+[DEBUG] 2016-12-10 19:46:37,152 -- CAMF_CUCI fold [5] iter 60: loss = 3.073582, delta_loss = 0.11315715, learn_rate = 0.0018813702
+[DEBUG] 2016-12-10 19:46:37,155 -- CAMF_CUCI fold [4] iter 65: loss = 3.1523159, delta_loss = 0.13170686, learn_rate = 0.0024011582
+[DEBUG] 2016-12-10 19:46:37,155 -- CAMF_CUCI fold [1] iter 62: loss = 2.6940331, delta_loss = 0.09475673, learn_rate = 0.0020742107
+[DEBUG] 2016-12-10 19:46:37,158 -- CAMF_CUCI fold [3] iter 52: loss = 4.6012774, delta_loss = -0.68250024, learn_rate = 0.0026741093
+[DEBUG] 2016-12-10 19:46:37,161 -- CAMF_CUCI fold [5] iter 61: loss = 2.964132, delta_loss = 0.109449856, learn_rate = 0.0019754388
+[DEBUG] 2016-12-10 19:46:37,162 -- CAMF_CUCI fold [2] iter 58: loss = 2.9600363, delta_loss = 0.13391449, learn_rate = 0.0017064583
+[DEBUG] 2016-12-10 19:46:37,166 -- CAMF_CUCI fold [1] iter 63: loss = 2.6007733, delta_loss = 0.093259685, learn_rate = 0.0021779211
+[DEBUG] 2016-12-10 19:46:37,168 -- CAMF_CUCI fold [4] iter 66: loss = 3.0233345, delta_loss = 0.12898143, learn_rate = 0.002521216
+[DEBUG] 2016-12-10 19:46:37,170 -- CAMF_CUCI fold [5] iter 62: loss = 2.8577137, delta_loss = 0.10641828, learn_rate = 0.0020742107
+[DEBUG] 2016-12-10 19:46:37,179 -- CAMF_CUCI fold [3] iter 53: loss = 4.4763055, delta_loss = 0.124972016, learn_rate = 0.0013370547
+[DEBUG] 2016-12-10 19:46:37,180 -- CAMF_CUCI fold [2] iter 59: loss = 2.8403578, delta_loss = 0.11967847, learn_rate = 0.0017917812
+[DEBUG] 2016-12-10 19:46:37,183 -- CAMF_CUCI fold [1] iter 64: loss = 2.5089056, delta_loss = 0.09186778, learn_rate = 0.0022868172
+[DEBUG] 2016-12-10 19:46:37,189 -- CAMF_CUCI fold [4] iter 67: loss = 2.8970537, delta_loss = 0.12628081, learn_rate = 0.002647277
+[DEBUG] 2016-12-10 19:46:37,190 -- CAMF_CUCI fold [5] iter 63: loss = 2.753865, delta_loss = 0.10384871, learn_rate = 0.0021779211
+[DEBUG] 2016-12-10 19:46:37,191 -- CAMF_CUCI fold [3] iter 54: loss = 4.1707, delta_loss = 0.30560535, learn_rate = 0.0014039074
+[DEBUG] 2016-12-10 19:46:37,193 -- CAMF_CUCI fold [1] iter 65: loss = 2.4183939, delta_loss = 0.09051175, learn_rate = 0.0024011582
+[DEBUG] 2016-12-10 19:46:37,194 -- CAMF_CUCI fold [2] iter 60: loss = 2.7303133, delta_loss = 0.11004454, learn_rate = 0.0018813702
+[DEBUG] 2016-12-10 19:46:37,200 -- CAMF_CUCI fold [1] iter 66: loss = 2.3292522, delta_loss = 0.08914166, learn_rate = 0.002521216
+[DEBUG] 2016-12-10 19:46:37,201 -- CAMF_CUCI fold [4] iter 68: loss = 2.773497, delta_loss = 0.12355647, learn_rate = 0.0027796407
+[DEBUG] 2016-12-10 19:46:37,202 -- CAMF_CUCI fold [5] iter 64: loss = 2.652282, delta_loss = 0.10158303, learn_rate = 0.0022868172
+[DEBUG] 2016-12-10 19:46:37,203 -- CAMF_CUCI fold [3] iter 55: loss = 3.968758, delta_loss = 0.20194203, learn_rate = 0.0014741028
+[DEBUG] 2016-12-10 19:46:37,207 -- CAMF_CUCI fold [2] iter 61: loss = 2.6272795, delta_loss = 0.103033766, learn_rate = 0.0019754388
+[DEBUG] 2016-12-10 19:46:37,210 -- CAMF_CUCI fold [1] iter 67: loss = 2.24153, delta_loss = 0.08772225, learn_rate = 0.002647277
+[DEBUG] 2016-12-10 19:46:37,215 -- CAMF_CUCI fold [4] iter 69: loss = 2.6527236, delta_loss = 0.120773695, learn_rate = 0.0029186227
+[DEBUG] 2016-12-10 19:46:37,215 -- CAMF_CUCI fold [5] iter 65: loss = 2.5527773, delta_loss = 0.09950479, learn_rate = 0.0024011582
+[DEBUG] 2016-12-10 19:46:37,217 -- CAMF_CUCI fold [3] iter 56: loss = 3.7960203, delta_loss = 0.17273793, learn_rate = 0.001547808
+[DEBUG] 2016-12-10 19:46:37,218 -- CAMF_CUCI fold [1] iter 68: loss = 2.1553009, delta_loss = 0.0862292, learn_rate = 0.0027796407
+[DEBUG] 2016-12-10 19:46:37,220 -- CAMF_CUCI fold [2] iter 62: loss = 2.529545, delta_loss = 0.09773427, learn_rate = 0.0020742107
+[DEBUG] 2016-12-10 19:46:37,228 -- CAMF_CUCI fold [1] iter 69: loss = 2.0706546, delta_loss = 0.08464628, learn_rate = 0.0029186227
+[DEBUG] 2016-12-10 19:46:37,229 -- CAMF_CUCI fold [5] iter 66: loss = 2.455248, delta_loss = 0.097529, learn_rate = 0.002521216
+[DEBUG] 2016-12-10 19:46:37,229 -- CAMF_CUCI fold [4] iter 70: loss = 2.5348148, delta_loss = 0.11790869, learn_rate = 0.003064554
+[DEBUG] 2016-12-10 19:46:37,230 -- CAMF_CUCI fold [3] iter 57: loss = 3.6394088, delta_loss = 0.15661137, learn_rate = 0.0016251983
+[DEBUG] 2016-12-10 19:46:37,234 -- CAMF_CUCI fold [2] iter 63: loss = 2.4359422, delta_loss = 0.09360303, learn_rate = 0.0021779211
+[DEBUG] 2016-12-10 19:46:37,236 -- CAMF_CUCI fold [1] iter 70: loss = 1.9876914, delta_loss = 0.08296313, learn_rate = 0.003064554
+[DEBUG] 2016-12-10 19:46:37,245 -- CAMF_CUCI fold [5] iter 67: loss = 2.359654, delta_loss = 0.095594235, learn_rate = 0.002647277
+[DEBUG] 2016-12-10 19:46:37,245 -- CAMF_CUCI fold [4] iter 71: loss = 2.4198687, delta_loss = 0.114946015, learn_rate = 0.0032177817
+[DEBUG] 2016-12-10 19:46:37,246 -- CAMF_CUCI fold [3] iter 58: loss = 3.4940288, delta_loss = 0.14537993, learn_rate = 0.0017064583
+[DEBUG] 2016-12-10 19:46:37,250 -- CAMF_CUCI fold [1] iter 71: loss = 1.9065176, delta_loss = 0.08117374, learn_rate = 0.0032177817
+[DEBUG] 2016-12-10 19:46:37,251 -- CAMF_CUCI fold [2] iter 64: loss = 2.3456657, delta_loss = 0.09027644, learn_rate = 0.0022868172
+[DEBUG] 2016-12-10 19:46:37,257 -- CAMF_CUCI fold [4] iter 72: loss = 2.3079922, delta_loss = 0.11187661, learn_rate = 0.0033786707
+[DEBUG] 2016-12-10 19:46:37,257 -- CAMF_CUCI fold [5] iter 68: loss = 2.2659974, delta_loss = 0.09365653, learn_rate = 0.0027796407
+[DEBUG] 2016-12-10 19:46:37,258 -- CAMF_CUCI fold [3] iter 59: loss = 3.3571024, delta_loss = 0.13692659, learn_rate = 0.0017917812
+[DEBUG] 2016-12-10 19:46:37,258 -- CAMF_CUCI fold [1] iter 72: loss = 1.8272424, delta_loss = 0.07927525, learn_rate = 0.0033786707
+[DEBUG] 2016-12-10 19:46:37,263 -- CAMF_CUCI fold [2] iter 65: loss = 2.2581666, delta_loss = 0.08749919, learn_rate = 0.0024011582
+[DEBUG] 2016-12-10 19:46:37,266 -- CAMF_CUCI fold [1] iter 73: loss = 1.7499751, delta_loss = 0.07726732, learn_rate = 0.0035476042
+[DEBUG] 2016-12-10 19:46:37,269 -- CAMF_CUCI fold [4] iter 73: loss = 2.199296, delta_loss = 0.10869618, learn_rate = 0.0035476042
+[DEBUG] 2016-12-10 19:46:37,269 -- CAMF_CUCI fold [3] iter 60: loss = 3.2267754, delta_loss = 0.13032691, learn_rate = 0.0018813702
+[DEBUG] 2016-12-10 19:46:37,269 -- CAMF_CUCI fold [5] iter 69: loss = 2.1743126, delta_loss = 0.091684796, learn_rate = 0.0029186227
+[DEBUG] 2016-12-10 19:46:37,273 -- CAMF_CUCI fold [1] iter 74: loss = 1.6748235, delta_loss = 0.0751516, learn_rate = 0.0037249844
+[DEBUG] 2016-12-10 19:46:37,274 -- CAMF_CUCI fold [2] iter 66: loss = 2.1730776, delta_loss = 0.085089, learn_rate = 0.002521216
+[DEBUG] 2016-12-10 19:46:37,280 -- CAMF_CUCI fold [4] iter 74: loss = 2.0938919, delta_loss = 0.10540415, learn_rate = 0.0037249844
+[DEBUG] 2016-12-10 19:46:37,280 -- CAMF_CUCI fold [3] iter 61: loss = 3.1017485, delta_loss = 0.12502696, learn_rate = 0.0019754388
+[DEBUG] 2016-12-10 19:46:37,280 -- CAMF_CUCI fold [5] iter 70: loss = 2.0846555, delta_loss = 0.089657225, learn_rate = 0.003064554
+[DEBUG] 2016-12-10 19:46:37,280 -- CAMF_CUCI fold [1] iter 75: loss = 1.601892, delta_loss = 0.07293153, learn_rate = 0.0039112335
+[DEBUG] 2016-12-10 19:46:37,285 -- CAMF_CUCI fold [2] iter 67: loss = 2.090162, delta_loss = 0.082915485, learn_rate = 0.002647277
+[DEBUG] 2016-12-10 19:46:37,288 -- CAMF_CUCI fold [1] iter 76: loss = 1.5312797, delta_loss = 0.070612215, learn_rate = 0.0041067954
+[DEBUG] 2016-12-10 19:46:37,291 -- CAMF_CUCI fold [3] iter 62: loss = 2.9811058, delta_loss = 0.12064272, learn_rate = 0.0020742107
+[DEBUG] 2016-12-10 19:46:37,291 -- CAMF_CUCI fold [5] iter 71: loss = 1.9970965, delta_loss = 0.08755881, learn_rate = 0.0032177817
+[DEBUG] 2016-12-10 19:46:37,291 -- CAMF_CUCI fold [4] iter 75: loss = 1.9918889, delta_loss = 0.10200295, learn_rate = 0.0039112335
+[DEBUG] 2016-12-10 19:46:37,295 -- CAMF_CUCI fold [1] iter 77: loss = 1.4630793, delta_loss = 0.06820037, learn_rate = 0.004312135
+[DEBUG] 2016-12-10 19:46:37,297 -- CAMF_CUCI fold [2] iter 68: loss = 2.0092762, delta_loss = 0.08088585, learn_rate = 0.0027796407
+[DEBUG] 2016-12-10 19:46:37,302 -- CAMF_CUCI fold [3] iter 63: loss = 2.8642108, delta_loss = 0.1168949, learn_rate = 0.0021779211
+[DEBUG] 2016-12-10 19:46:37,302 -- CAMF_CUCI fold [5] iter 72: loss = 1.911717, delta_loss = 0.08537951, learn_rate = 0.0033786707
+[DEBUG] 2016-12-10 19:46:37,302 -- CAMF_CUCI fold [4] iter 76: loss = 1.8933914, delta_loss = 0.09849749, learn_rate = 0.0041067954
+[DEBUG] 2016-12-10 19:46:37,302 -- CAMF_CUCI fold [1] iter 78: loss = 1.397375, delta_loss = 0.06570432, learn_rate = 0.0045277416
+[DEBUG] 2016-12-10 19:46:37,308 -- CAMF_CUCI fold [2] iter 69: loss = 1.9303416, delta_loss = 0.07893455, learn_rate = 0.0029186227
+[DEBUG] 2016-12-10 19:46:37,311 -- CAMF_CUCI fold [1] iter 79: loss = 1.334241, delta_loss = 0.06313395, learn_rate = 0.004754129
+[DEBUG] 2016-12-10 19:46:37,313 -- CAMF_CUCI fold [5] iter 73: loss = 1.828604, delta_loss = 0.083113045, learn_rate = 0.0035476042
+[DEBUG] 2016-12-10 19:46:37,313 -- CAMF_CUCI fold [3] iter 64: loss = 2.7506323, delta_loss = 0.113578536, learn_rate = 0.0022868172
+[DEBUG] 2016-12-10 19:46:37,314 -- CAMF_CUCI fold [4] iter 77: loss = 1.7984964, delta_loss = 0.09489503, learn_rate = 0.004312135
+[DEBUG] 2016-12-10 19:46:37,329 -- CAMF_CUCI fold [1] iter 80: loss = 1.2737404, delta_loss = 0.06050062, learn_rate = 0.0049918354
+[DEBUG] 2016-12-10 19:46:37,330 -- CAMF_CUCI fold [2] iter 70: loss = 1.853326, delta_loss = 0.07701569, learn_rate = 0.003064554
+[DEBUG] 2016-12-10 19:46:37,333 -- CAMF_CUCI fold [3] iter 65: loss = 2.6400883, delta_loss = 0.11054402, learn_rate = 0.0024011582
+[DEBUG] 2016-12-10 19:46:37,333 -- CAMF_CUCI fold [4] iter 78: loss = 1.7072914, delta_loss = 0.09120498, learn_rate = 0.0045277416
+[DEBUG] 2016-12-10 19:46:37,335 -- CAMF_CUCI fold [5] iter 74: loss = 1.7478479, delta_loss = 0.08075615, learn_rate = 0.0037249844
+[DEBUG] 2016-12-10 19:46:37,343 -- CAMF_CUCI fold [2] iter 71: loss = 1.7782286, delta_loss = 0.07509729, learn_rate = 0.0032177817
+[DEBUG] 2016-12-10 19:46:37,345 -- CAMF_CUCI fold [1] iter 81: loss = 1.2159234, delta_loss = 0.057817057, learn_rate = 0.005241427
+[DEBUG] 2016-12-10 19:46:37,346 -- CAMF_CUCI fold [4] iter 79: loss = 1.6198525, delta_loss = 0.08743883, learn_rate = 0.004754129
+[DEBUG] 2016-12-10 19:46:37,346 -- CAMF_CUCI fold [3] iter 66: loss = 2.532405, delta_loss = 0.107683316, learn_rate = 0.002521216
+[DEBUG] 2016-12-10 19:46:37,355 -- CAMF_CUCI fold [2] iter 72: loss = 1.7050714, delta_loss = 0.07315722, learn_rate = 0.0033786707
+[DEBUG] 2016-12-10 19:46:37,355 -- CAMF_CUCI fold [5] iter 75: loss = 1.6695398, delta_loss = 0.07830809, learn_rate = 0.0039112335
+[DEBUG] 2016-12-10 19:46:37,358 -- CAMF_CUCI fold [4] iter 80: loss = 1.5362425, delta_loss = 0.08361008, learn_rate = 0.0049918354
+[DEBUG] 2016-12-10 19:46:37,358 -- CAMF_CUCI fold [3] iter 67: loss = 2.4274855, delta_loss = 0.10491951, learn_rate = 0.002647277
+[DEBUG] 2016-12-10 19:46:37,359 -- CAMF_CUCI fold [1] iter 82: loss = 1.1608262, delta_loss = 0.055097144, learn_rate = 0.0055034985
+[DEBUG] 2016-12-10 19:46:37,364 -- CAMF_CUCI fold [2] iter 73: loss = 1.6338912, delta_loss = 0.07118024, learn_rate = 0.0035476042
+[DEBUG] 2016-12-10 19:46:37,367 -- CAMF_CUCI fold [4] iter 81: loss = 1.4565084, delta_loss = 0.079734035, learn_rate = 0.005241427
+[DEBUG] 2016-12-10 19:46:37,368 -- CAMF_CUCI fold [5] iter 76: loss = 1.5937693, delta_loss = 0.07577047, learn_rate = 0.0041067954
+[DEBUG] 2016-12-10 19:46:37,368 -- CAMF_CUCI fold [3] iter 68: loss = 2.3252869, delta_loss = 0.102198645, learn_rate = 0.0027796407
+[DEBUG] 2016-12-10 19:46:37,373 -- CAMF_CUCI fold [1] iter 83: loss = 1.1084706, delta_loss = 0.052355677, learn_rate = 0.0057786736
+[DEBUG] 2016-12-10 19:46:37,376 -- CAMF_CUCI fold [2] iter 74: loss = 1.5647352, delta_loss = 0.06915607, learn_rate = 0.0037249844
+[DEBUG] 2016-12-10 19:46:37,377 -- CAMF_CUCI fold [4] iter 82: loss = 1.3806808, delta_loss = 0.075827636, learn_rate = 0.0055034985
+[DEBUG] 2016-12-10 19:46:37,378 -- CAMF_CUCI fold [3] iter 69: loss = 2.2258031, delta_loss = 0.09948355, learn_rate = 0.0029186227
+[DEBUG] 2016-12-10 19:46:37,381 -- CAMF_CUCI fold [5] iter 77: loss = 1.5206223, delta_loss = 0.07314707, learn_rate = 0.004312135
+[DEBUG] 2016-12-10 19:46:37,385 -- CAMF_CUCI fold [2] iter 75: loss = 1.4976571, delta_loss = 0.06707812, learn_rate = 0.0039112335
+[DEBUG] 2016-12-10 19:46:37,386 -- CAMF_CUCI fold [1] iter 84: loss = 1.0588626, delta_loss = 0.049608067, learn_rate = 0.006067607
+[DEBUG] 2016-12-10 19:46:37,390 -- CAMF_CUCI fold [4] iter 83: loss = 1.3087717, delta_loss = 0.071909115, learn_rate = 0.0057786736
+[DEBUG] 2016-12-10 19:46:37,390 -- CAMF_CUCI fold [3] iter 70: loss = 2.129054, delta_loss = 0.0967491, learn_rate = 0.003064554
+[DEBUG] 2016-12-10 19:46:37,396 -- CAMF_CUCI fold [5] iter 78: loss = 1.4501784, delta_loss = 0.070443824, learn_rate = 0.0045277416
+[DEBUG] 2016-12-10 19:46:37,396 -- CAMF_CUCI fold [2] iter 76: loss = 1.4327142, delta_loss = 0.06494273, learn_rate = 0.0041067954
+[DEBUG] 2016-12-10 19:46:37,399 -- CAMF_CUCI fold [3] iter 71: loss = 2.0350754, delta_loss = 0.0939787, learn_rate = 0.0032177817
+[DEBUG] 2016-12-10 19:46:37,399 -- CAMF_CUCI fold [4] iter 84: loss = 1.240774, delta_loss = 0.06799768, learn_rate = 0.006067607
+[DEBUG] 2016-12-10 19:46:37,399 -- CAMF_CUCI fold [1] iter 85: loss = 1.0119925, delta_loss = 0.04687002, learn_rate = 0.0063709873
+[DEBUG] 2016-12-10 19:46:37,406 -- CAMF_CUCI fold [2] iter 77: loss = 1.3699656, delta_loss = 0.06274872, learn_rate = 0.004312135
+[DEBUG] 2016-12-10 19:46:37,408 -- CAMF_CUCI fold [3] iter 72: loss = 1.9439136, delta_loss = 0.09116182, learn_rate = 0.0033786707
+[DEBUG] 2016-12-10 19:46:37,409 -- CAMF_CUCI fold [4] iter 85: loss = 1.176661, delta_loss = 0.06411306, learn_rate = 0.0063709873
+[DEBUG] 2016-12-10 19:46:37,409 -- CAMF_CUCI fold [5] iter 79: loss = 1.3825097, delta_loss = 0.06766871, learn_rate = 0.004754129
+[DEBUG] 2016-12-10 19:46:37,413 -- CAMF_CUCI fold [1] iter 86: loss = 0.9678353, delta_loss = 0.04415719, learn_rate = 0.006689537
+[DEBUG] 2016-12-10 19:46:37,415 -- CAMF_CUCI fold [2] iter 78: loss = 1.3094684, delta_loss = 0.06049721, learn_rate = 0.0045277416
+[DEBUG] 2016-12-10 19:46:37,416 -- CAMF_CUCI fold [3] iter 73: loss = 1.8556215, delta_loss = 0.088292174, learn_rate = 0.0035476042
+[DEBUG] 2016-12-10 19:46:37,418 -- CAMF_CUCI fold [4] iter 86: loss = 1.1163858, delta_loss = 0.060275115, learn_rate = 0.006689537
+[DEBUG] 2016-12-10 19:46:37,421 -- CAMF_CUCI fold [5] iter 80: loss = 1.317678, delta_loss = 0.06483171, learn_rate = 0.0049918354
+[DEBUG] 2016-12-10 19:46:37,423 -- CAMF_CUCI fold [2] iter 79: loss = 1.2512769, delta_loss = 0.05819149, learn_rate = 0.004754129
+[DEBUG] 2016-12-10 19:46:37,424 -- CAMF_CUCI fold [3] iter 74: loss = 1.7702547, delta_loss = 0.0853667, learn_rate = 0.0037249844
+[DEBUG] 2016-12-10 19:46:37,425 -- CAMF_CUCI fold [1] iter 87: loss = 0.9263505, delta_loss = 0.041484825, learn_rate = 0.0070240134
+[DEBUG] 2016-12-10 19:46:37,429 -- CAMF_CUCI fold [4] iter 87: loss = 1.0598825, delta_loss = 0.056503356, learn_rate = 0.0070240134
+[DEBUG] 2016-12-10 19:46:37,433 -- CAMF_CUCI fold [3] iter 75: loss = 1.6878699, delta_loss = 0.082384825, learn_rate = 0.0039112335
+[DEBUG] 2016-12-10 19:46:37,433 -- CAMF_CUCI fold [2] iter 80: loss = 1.1954399, delta_loss = 0.055836923, learn_rate = 0.0049918354
+[DEBUG] 2016-12-10 19:46:37,435 -- CAMF_CUCI fold [5] iter 81: loss = 1.2557334, delta_loss = 0.06194459, learn_rate = 0.005241427
+[DEBUG] 2016-12-10 19:46:37,438 -- CAMF_CUCI fold [1] iter 88: loss = 0.887483, delta_loss = 0.03886746, learn_rate = 0.0073752142
+[DEBUG] 2016-12-10 19:46:37,438 -- CAMF_CUCI fold [4] iter 88: loss = 1.007066, delta_loss = 0.052816518, learn_rate = 0.0073752142
+[DEBUG] 2016-12-10 19:46:37,441 -- CAMF_CUCI fold [3] iter 76: loss = 1.6085218, delta_loss = 0.079348125, learn_rate = 0.0041067954
+[DEBUG] 2016-12-10 19:46:37,441 -- CAMF_CUCI fold [2] iter 81: loss = 1.1419991, delta_loss = 0.053440847, learn_rate = 0.005241427
+[DEBUG] 2016-12-10 19:46:37,445 -- CAMF_CUCI fold [4] iter 89: loss = 0.9578338, delta_loss = 0.049232174, learn_rate = 0.007743975
+[DEBUG] 2016-12-10 19:46:37,446 -- CAMF_CUCI fold [5] iter 82: loss = 1.1967127, delta_loss = 0.059020706, learn_rate = 0.0055034985
+[DEBUG] 2016-12-10 19:46:37,448 -- CAMF_CUCI fold [3] iter 77: loss = 1.5322616, delta_loss = 0.07626018, learn_rate = 0.004312135
+[DEBUG] 2016-12-10 19:46:37,449 -- CAMF_CUCI fold [2] iter 82: loss = 1.0909867, delta_loss = 0.05101238, learn_rate = 0.0055034985
+[DEBUG] 2016-12-10 19:46:37,449 -- CAMF_CUCI fold [1] iter 89: loss = 0.85116446, delta_loss = 0.03631859, learn_rate = 0.007743975
+[DEBUG] 2016-12-10 19:46:37,454 -- CAMF_CUCI fold [4] iter 90: loss = 0.9120674, delta_loss = 0.04576636, learn_rate = 0.008131173
+[DEBUG] 2016-12-10 19:46:37,456 -- CAMF_CUCI fold [3] iter 78: loss = 1.459135, delta_loss = 0.073126554, learn_rate = 0.0045277416
+[DEBUG] 2016-12-10 19:46:37,458 -- CAMF_CUCI fold [2] iter 83: loss = 1.0424246, delta_loss = 0.048562188, learn_rate = 0.0057786736
+[DEBUG] 2016-12-10 19:46:37,458 -- CAMF_CUCI fold [5] iter 83: loss = 1.140638, delta_loss = 0.05607473, learn_rate = 0.0057786736
+[DEBUG] 2016-12-10 19:46:37,461 -- CAMF_CUCI fold [1] iter 90: loss = 0.817314, delta_loss = 0.03385041, learn_rate = 0.008131173
+[DEBUG] 2016-12-10 19:46:37,469 -- CAMF_CUCI fold [4] iter 91: loss = 0.86963415, delta_loss = 0.04243328, learn_rate = 0.008537732
+[DEBUG] 2016-12-10 19:46:37,470 -- CAMF_CUCI fold [2] iter 84: loss = 0.99632233, delta_loss = 0.0461022, learn_rate = 0.006067607
+[DEBUG] 2016-12-10 19:46:37,470 -- CAMF_CUCI fold [3] iter 79: loss = 1.3891803, delta_loss = 0.069954716, learn_rate = 0.004754129
+[DEBUG] 2016-12-10 19:46:37,474 -- CAMF_CUCI fold [5] iter 84: loss = 1.0875157, delta_loss = 0.05312229, learn_rate = 0.006067607
+[DEBUG] 2016-12-10 19:46:37,476 -- CAMF_CUCI fold [1] iter 91: loss = 0.78584045, delta_loss = 0.0314736, learn_rate = 0.008537732
+[DEBUG] 2016-12-10 19:46:37,477 -- CAMF_CUCI fold [2] iter 85: loss = 0.95267713, delta_loss = 0.043645214, learn_rate = 0.0063709873
+[DEBUG] 2016-12-10 19:46:37,479 -- CAMF_CUCI fold [4] iter 92: loss = 0.8303891, delta_loss = 0.03924505, learn_rate = 0.008964619
+[DEBUG] 2016-12-10 19:46:37,481 -- CAMF_CUCI fold [3] iter 80: loss = 1.3224263, delta_loss = 0.06675402, learn_rate = 0.0049918354
+[DEBUG] 2016-12-10 19:46:37,484 -- CAMF_CUCI fold [2] iter 86: loss = 0.91147256, delta_loss = 0.04120454, learn_rate = 0.006689537
+[DEBUG] 2016-12-10 19:46:37,485 -- CAMF_CUCI fold [5] iter 85: loss = 1.0373361, delta_loss = 0.050179612, learn_rate = 0.0063709873
+[DEBUG] 2016-12-10 19:46:37,487 -- CAMF_CUCI fold [1] iter 92: loss = 0.7566433, delta_loss = 0.029197136, learn_rate = 0.008964619
+[DEBUG] 2016-12-10 19:46:37,490 -- CAMF_CUCI fold [4] iter 93: loss = 0.7941776, delta_loss = 0.036211535, learn_rate = 0.00941285
+[DEBUG] 2016-12-10 19:46:37,491 -- CAMF_CUCI fold [2] iter 87: loss = 0.872679, delta_loss = 0.038793586, learn_rate = 0.0070240134
+[DEBUG] 2016-12-10 19:46:37,491 -- CAMF_CUCI fold [3] iter 81: loss = 1.2588907, delta_loss = 0.06353554, learn_rate = 0.005241427
+[DEBUG] 2016-12-10 19:46:37,496 -- CAMF_CUCI fold [5] iter 86: loss = 0.99007297, delta_loss = 0.047263116, learn_rate = 0.006689537
+[DEBUG] 2016-12-10 19:46:37,498 -- CAMF_CUCI fold [2] iter 88: loss = 0.8362535, delta_loss = 0.036425475, learn_rate = 0.0073752142
+[DEBUG] 2016-12-10 19:46:37,498 -- CAMF_CUCI fold [1] iter 93: loss = 0.7296151, delta_loss = 0.027028197, learn_rate = 0.00941285
+[DEBUG] 2016-12-10 19:46:37,501 -- CAMF_CUCI fold [4] iter 94: loss = 0.7608374, delta_loss = 0.033340216, learn_rate = 0.009883492
+[DEBUG] 2016-12-10 19:46:37,502 -- CAMF_CUCI fold [3] iter 82: loss = 1.1985788, delta_loss = 0.060311895, learn_rate = 0.0055034985
+[DEBUG] 2016-12-10 19:46:37,505 -- CAMF_CUCI fold [2] iter 89: loss = 0.80214083, delta_loss = 0.034112684, learn_rate = 0.007743975
+[DEBUG] 2016-12-10 19:46:37,507 -- CAMF_CUCI fold [5] iter 87: loss = 0.94568396, delta_loss = 0.044389024, learn_rate = 0.0070240134
+[DEBUG] 2016-12-10 19:46:37,510 -- CAMF_CUCI fold [1] iter 94: loss = 0.704643, delta_loss = 0.02497209, learn_rate = 0.009883492
+[DEBUG] 2016-12-10 19:46:37,512 -- CAMF_CUCI fold [4] iter 95: loss = 0.7302012, delta_loss = 0.030636163, learn_rate = 0.010377667
+[DEBUG] 2016-12-10 19:46:37,513 -- CAMF_CUCI fold [3] iter 83: loss = 1.141482, delta_loss = 0.057096902, learn_rate = 0.0057786736
+[DEBUG] 2016-12-10 19:46:37,513 -- CAMF_CUCI fold [2] iter 90: loss = 0.7702741, delta_loss = 0.03186671, learn_rate = 0.008131173
+[DEBUG] 2016-12-10 19:46:37,518 -- CAMF_CUCI fold [5] iter 88: loss = 0.90411097, delta_loss = 0.041572962, learn_rate = 0.0073752142
+[DEBUG] 2016-12-10 19:46:37,521 -- CAMF_CUCI fold [2] iter 91: loss = 0.74057627, delta_loss = 0.029697813, learn_rate = 0.008537732
+[DEBUG] 2016-12-10 19:46:37,521 -- CAMF_CUCI fold [1] iter 95: loss = 0.68161076, delta_loss = 0.023032254, learn_rate = 0.010377667
+[DEBUG] 2016-12-10 19:46:37,524 -- CAMF_CUCI fold [4] iter 96: loss = 0.70209914, delta_loss = 0.028102042, learn_rate = 0.0108965505
+[DEBUG] 2016-12-10 19:46:37,524 -- CAMF_CUCI fold [3] iter 84: loss = 1.0875767, delta_loss = 0.05390527, learn_rate = 0.006067607
+[DEBUG] 2016-12-10 19:46:37,528 -- CAMF_CUCI fold [2] iter 92: loss = 0.7129615, delta_loss = 0.027614787, learn_rate = 0.008964619
+[DEBUG] 2016-12-10 19:46:37,529 -- CAMF_CUCI fold [5] iter 89: loss = 0.86528134, delta_loss = 0.038829625, learn_rate = 0.007743975
+[DEBUG] 2016-12-10 19:46:37,532 -- CAMF_CUCI fold [1] iter 96: loss = 0.66040045, delta_loss = 0.021210311, learn_rate = 0.0108965505
+[DEBUG] 2016-12-10 19:46:37,535 -- CAMF_CUCI fold [4] iter 97: loss = 0.67636096, delta_loss = 0.02573821, learn_rate = 0.011441378
+[DEBUG] 2016-12-10 19:46:37,535 -- CAMF_CUCI fold [3] iter 85: loss = 1.0368246, delta_loss = 0.050752178, learn_rate = 0.0063709873
+[DEBUG] 2016-12-10 19:46:37,537 -- CAMF_CUCI fold [2] iter 93: loss = 0.6873367, delta_loss = 0.025624825, learn_rate = 0.00941285
+[DEBUG] 2016-12-10 19:46:37,542 -- CAMF_CUCI fold [5] iter 90: loss = 0.82910895, delta_loss = 0.036172416, learn_rate = 0.008131173
+[DEBUG] 2016-12-10 19:46:37,545 -- CAMF_CUCI fold [1] iter 97: loss = 0.64089423, delta_loss = 0.019506183, learn_rate = 0.011441378
+[DEBUG] 2016-12-10 19:46:37,545 -- CAMF_CUCI fold [2] iter 94: loss = 0.66360325, delta_loss = 0.023733413, learn_rate = 0.009883492
+[DEBUG] 2016-12-10 19:46:37,547 -- CAMF_CUCI fold [4] iter 98: loss = 0.6528181, delta_loss = 0.023542855, learn_rate = 0.012013447
+[DEBUG] 2016-12-10 19:46:37,547 -- CAMF_CUCI fold [3] iter 86: loss = 0.9891717, delta_loss = 0.04765285, learn_rate = 0.006689537
+[DEBUG] 2016-12-10 19:46:37,553 -- CAMF_CUCI fold [5] iter 91: loss = 0.79549575, delta_loss = 0.033613198, learn_rate = 0.008537732
+[DEBUG] 2016-12-10 19:46:37,555 -- CAMF_CUCI fold [2] iter 95: loss = 0.64165896, delta_loss = 0.021944316, learn_rate = 0.010377667
+[DEBUG] 2016-12-10 19:46:37,561 -- CAMF_CUCI fold [1] iter 98: loss = 0.62297606, delta_loss = 0.01791822, learn_rate = 0.012013447
+[DEBUG] 2016-12-10 19:46:37,562 -- CAMF_CUCI fold [4] iter 99: loss = 0.6313059, delta_loss = 0.021512197, learn_rate = 0.012614119
+[DEBUG] 2016-12-10 19:46:37,563 -- CAMF_CUCI fold [3] iter 87: loss = 0.9445495, delta_loss = 0.044622168, learn_rate = 0.0070240134
+[DEBUG] 2016-12-10 19:46:37,572 -- CAMF_CUCI fold [5] iter 92: loss = 0.76433367, delta_loss = 0.031162066, learn_rate = 0.008964619
+[DEBUG] 2016-12-10 19:46:37,572 -- CAMF_CUCI fold [4] iter 100: loss = 0.6116651, delta_loss = 0.01964073, learn_rate = 0.013244825
+[DEBUG] 2016-12-10 19:46:37,572 -- CAMF_CUCI fold [2] iter 96: loss = 0.62139934, delta_loss = 0.020259593, learn_rate = 0.0108965505
+[DEBUG] 2016-12-10 19:46:37,573 -- CAMF_CUCI fold [4] evaluate test data ... 
+[DEBUG] 2016-12-10 19:46:37,575 -- CAMF_CUCI fold [1] iter 99: loss = 0.60653263, delta_loss = 0.0164434, learn_rate = 0.012614119
+[DEBUG] 2016-12-10 19:46:37,577 -- CAMF_CUCI fold [4] has writeen rating predictions to /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/CAMF_CUCI-rating-predictions fold [4].txt
+[DEBUG] 2016-12-10 19:46:37,578 -- CAMF_CUCI fold [3] iter 88: loss = 0.9028753, delta_loss = 0.041674238, learn_rate = 0.0073752142
+[DEBUG] 2016-12-10 19:46:37,581 -- CAMF_CUCI fold [4]: MAE: 0.853278, RMSE: 1.089740, NAME: 0.213319, rMAE: 0.842795, rRMSE: 1.152177, MPE: 0.000000	Time: 00:01, 00:00	View: all
+[DEBUG] 2016-12-10 19:46:37,584 -- CAMF_CUCI fold [2] iter 97: loss = 0.60271966, delta_loss = 0.01867969, learn_rate = 0.011441378
+[DEBUG] 2016-12-10 19:46:37,587 -- CAMF_CUCI fold [5] iter 93: loss = 0.7355065, delta_loss = 0.028827172, learn_rate = 0.00941285
+[DEBUG] 2016-12-10 19:46:37,588 -- CAMF_CUCI fold [1] iter 100: loss = 0.5914551, delta_loss = 0.0150775425, learn_rate = 0.013244825
+[DEBUG] 2016-12-10 19:46:37,588 -- CAMF_CUCI fold [1] evaluate test data ... 
+[DEBUG] 2016-12-10 19:46:37,592 -- CAMF_CUCI fold [3] iter 89: loss = 0.8640532, delta_loss = 0.038822077, learn_rate = 0.007743975
+[DEBUG] 2016-12-10 19:46:37,594 -- CAMF_CUCI fold [2] iter 98: loss = 0.5855161, delta_loss = 0.017203562, learn_rate = 0.012013447
+[DEBUG] 2016-12-10 19:46:37,594 -- CAMF_CUCI fold [1] has writeen rating predictions to /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/CAMF_CUCI-rating-predictions fold [1].txt
+[DEBUG] 2016-12-10 19:46:37,594 -- CAMF_CUCI fold [1]: MAE: 0.821429, RMSE: 1.041563, NAME: 0.205357, rMAE: 0.793028, rRMSE: 1.088662, MPE: 0.000000	Time: 00:01, 00:00	View: all
+[DEBUG] 2016-12-10 19:46:37,597 -- CAMF_CUCI fold [5] iter 94: loss = 0.70889187, delta_loss = 0.026614644, learn_rate = 0.009883492
+[DEBUG] 2016-12-10 19:46:37,601 -- CAMF_CUCI fold [2] iter 99: loss = 0.56968725, delta_loss = 0.015828835, learn_rate = 0.012614119
+[DEBUG] 2016-12-10 19:46:37,602 -- CAMF_CUCI fold [3] iter 90: loss = 0.8279759, delta_loss = 0.0360773, learn_rate = 0.008131173
+[DEBUG] 2016-12-10 19:46:37,606 -- CAMF_CUCI fold [5] iter 95: loss = 0.6843633, delta_loss = 0.024528548, learn_rate = 0.010377667
+[DEBUG] 2016-12-10 19:46:37,610 -- CAMF_CUCI fold [2] iter 100: loss = 0.55513525, delta_loss = 0.014552017, learn_rate = 0.013244825
+[DEBUG] 2016-12-10 19:46:37,610 -- CAMF_CUCI fold [2] evaluate test data ... 
+[DEBUG] 2016-12-10 19:46:37,616 -- CAMF_CUCI fold [3] iter 91: loss = 0.79452604, delta_loss = 0.033449855, learn_rate = 0.008537732
+[DEBUG] 2016-12-10 19:46:37,619 -- CAMF_CUCI fold [5] iter 96: loss = 0.6617924, delta_loss = 0.022570923, learn_rate = 0.0108965505
+[DEBUG] 2016-12-10 19:46:37,621 -- CAMF_CUCI fold [2] has writeen rating predictions to /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/CAMF_CUCI-rating-predictions fold [2].txt
+[DEBUG] 2016-12-10 19:46:37,622 -- CAMF_CUCI fold [2]: MAE: 0.790256, RMSE: 1.019502, NAME: 0.197564, rMAE: 0.766376, rRMSE: 1.062460, MPE: 0.000000	Time: 00:01, 00:00	View: all
+[DEBUG] 2016-12-10 19:46:37,627 -- CAMF_CUCI fold [3] iter 92: loss = 0.7635782, delta_loss = 0.030947879, learn_rate = 0.008964619
+[DEBUG] 2016-12-10 19:46:37,627 -- CAMF_CUCI fold [5] iter 97: loss = 0.6410505, delta_loss = 0.020741884, learn_rate = 0.011441378
+[DEBUG] 2016-12-10 19:46:37,633 -- CAMF_CUCI fold [3] iter 93: loss = 0.7350006, delta_loss = 0.028577568, learn_rate = 0.00941285
+[DEBUG] 2016-12-10 19:46:37,634 -- CAMF_CUCI fold [5] iter 98: loss = 0.6220107, delta_loss = 0.019039772, learn_rate = 0.012013447
+[DEBUG] 2016-12-10 19:46:37,640 -- CAMF_CUCI fold [3] iter 94: loss = 0.7086575, delta_loss = 0.026343122, learn_rate = 0.009883492
+[DEBUG] 2016-12-10 19:46:37,641 -- CAMF_CUCI fold [5] iter 99: loss = 0.60454935, delta_loss = 0.017461358, learn_rate = 0.012614119
+[DEBUG] 2016-12-10 19:46:37,646 -- CAMF_CUCI fold [3] iter 95: loss = 0.6844107, delta_loss = 0.024246765, learn_rate = 0.010377667
+[DEBUG] 2016-12-10 19:46:37,647 -- CAMF_CUCI fold [5] iter 100: loss = 0.5885473, delta_loss = 0.016002072, learn_rate = 0.013244825
+[DEBUG] 2016-12-10 19:46:37,647 -- CAMF_CUCI fold [5] evaluate test data ... 
+[DEBUG] 2016-12-10 19:46:37,650 -- CAMF_CUCI fold [5] has writeen rating predictions to /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/CAMF_CUCI-rating-predictions fold [5].txt
+[DEBUG] 2016-12-10 19:46:37,650 -- CAMF_CUCI fold [5]: MAE: 0.832203, RMSE: 1.042394, NAME: 0.208051, rMAE: 0.823144, rRMSE: 1.094847, MPE: 0.000000	Time: 00:01, 00:00	View: all
+[DEBUG] 2016-12-10 19:46:37,653 -- CAMF_CUCI fold [3] iter 96: loss = 0.6621219, delta_loss = 0.022288818, learn_rate = 0.0108965505
+[DEBUG] 2016-12-10 19:46:37,658 -- CAMF_CUCI fold [3] iter 97: loss = 0.6416541, delta_loss = 0.020467812, learn_rate = 0.011441378
+[DEBUG] 2016-12-10 19:46:37,664 -- CAMF_CUCI fold [3] iter 98: loss = 0.6228734, delta_loss = 0.018780656, learn_rate = 0.012013447
+[DEBUG] 2016-12-10 19:46:37,669 -- CAMF_CUCI fold [3] iter 99: loss = 0.6056506, delta_loss = 0.017222848, learn_rate = 0.012614119
+[DEBUG] 2016-12-10 19:46:37,674 -- CAMF_CUCI fold [3] iter 100: loss = 0.58986187, delta_loss = 0.015788687, learn_rate = 0.013244825
+[DEBUG] 2016-12-10 19:46:37,674 -- CAMF_CUCI fold [3] evaluate test data ... 
+[DEBUG] 2016-12-10 19:46:37,676 -- CAMF_CUCI fold [3] has writeen rating predictions to /home/kpour2001/IdeaProjects/CARSKit/context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/CAMF_CUCI-rating-predictions fold [3].txt
+[DEBUG] 2016-12-10 19:46:37,677 -- CAMF_CUCI fold [3]: MAE: 0.841210, RMSE: 1.071239, NAME: 0.210303, rMAE: 0.825708, rRMSE: 1.128942, MPE: 0.000000	Time: 00:01, 00:00	View: all
+[INFO ] 2016-12-10 19:46:37,678 -- Final Results by CAMF_CUCI, MAE: 0.827675, RMSE: 1.052888, NAME: 0.206919, rMAE: 0.810210, rRMSE: 1.105417, MPE: 0.000000, numFactors: 10, numIter: 100, lrate: 0.02, maxlrate: -1.0, regB: 1.0E-4, regU: 1.0E-4, regI: 1.0E-4, regC: 0.001, isBoldDriver: true, Time: '00:01','00:00'
+
+[DEBUG] 2016-12-10 19:46:37,678 -- Have been collected to file: results_all_2016.txt
