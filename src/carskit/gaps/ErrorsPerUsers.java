@@ -28,7 +28,6 @@ public class ErrorsPerUsers {
 
         Set users =  records.rowKeySet();
         users.forEach(name -> getStatistics(Integer.parseInt(name.toString()),records));
-
     }
 
     public static void getStatistics(Integer rowKey, Table records)

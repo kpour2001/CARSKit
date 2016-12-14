@@ -14,8 +14,12 @@ import static java.lang.Math.abs;
  * Created by Mohammad Pourzaferani on 12/12/16.
  */
 public class WideRageUsers {
-    static String datasetOfRatingPath = "context-aware_data_sets/LDOS-CoMoDa/LDOS-CoMoDa.csv";
-    static String evaluationWorkSpacePath = "context-aware_data_sets/LDOS-CoMoDa/CARSKit.Workspace/NMF-rating-predictions fold [4].txt";
+    static String datasetOfRatingPath = "context-aware_data_sets/Music_InCarMusic/Data_InCarMusic.csv";
+    static String evaluationWorkSpacePath = "context-aware_data_sets/Music_InCarMusic/CARSKit.Workspace/";
+    static String algorithm = "SVD++";
+    static Integer fold = 0;
+    static Table<Integer, Integer,Double> MAE = HashBasedTable.create();
+
     public static void main(String[] args) throws FileNotFoundException {
         Scanner datasetOfRating = new Scanner(new File(datasetOfRatingPath));
         Table<Integer, Integer,Integer> records = HashBasedTable.create();
@@ -34,34 +38,43 @@ public class WideRageUsers {
         users.forEach(name -> getStatistics(Integer.parseInt(name.toString()),records,UserEvaluation));
         //System.out.println(UserEvaluation);
         System.out.println("--------------------------------------------------------");
-
-        Scanner scanner = new Scanner(new File(evaluationWorkSpacePath));
-        Table<Integer, Integer, Double> errorRecords = HashBasedTable.create();
-        scanner.nextLine();
-        while(scanner.hasNext())
+        for (int i =1; i <=5; i++)
         {
-            String[] temp = scanner.nextLine().split("\t");
-            errorRecords.put(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]),abs(Double.parseDouble(temp[3])-Double.parseDouble(temp[4])));
+            fold = i;
+            System.out.println("\nAlgorithm:"+algorithm+", Fold:"+i);
+            Scanner scanner = new Scanner(new File(String.format(evaluationWorkSpacePath+"%s-rating-predictions fold [%d].txt",algorithm,i)));
+            Table<Integer, Integer, Double> errorRecords = HashBasedTable.create();
+            scanner.nextLine();
+            while(scanner.hasNext())
+            {
+                String[] temp = scanner.nextLine().split("\t");
+                errorRecords.put(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]),abs(Double.parseDouble(temp[3])-Double.parseDouble(temp[4])));
+            }
+
+            users =  errorRecords.rowKeySet();
+            //Map<Integer,Double> UserEvaluationError = new HashMap<>();
+            //users.forEach(name -> getErrorStatistics(Integer.parseInt(name.toString()),errorRecords,UserEvaluationError));
+            //System.out.println(errorRecords);
+            //System.out.println("Find how much Wide Range Users make Error");
+
+            Map<Integer, ArrayList<Integer>> reverseMap = new HashMap<>(
+                    UserEvaluation.entrySet().stream()
+                            .collect(Collectors.groupingBy(Map.Entry::getValue)).values().stream()
+                            .collect(Collectors.toMap(
+                                    item -> item.get(0).getValue(),
+                                    item -> new ArrayList<>(
+                                            item.stream()
+                                                    .map(Map.Entry::getKey)
+                                                    .collect(Collectors.toList())
+                                    ))
+                            ));
+            reverseMap.forEach((range,usersError) -> calculateMAE(range,errorRecords,usersError));
+        }
+        for(Map<Integer,Double> entry :MAE.columnMap().values())
+        {
+            System.out.println((entry.values().stream().mapToDouble(Double::doubleValue).sum()/5));
         }
 
-        users =  errorRecords.rowKeySet();
-        //Map<Integer,Double> UserEvaluationError = new HashMap<>();
-        //users.forEach(name -> getErrorStatistics(Integer.parseInt(name.toString()),errorRecords,UserEvaluationError));
-        //System.out.println(errorRecords);
-        //System.out.println("Find how much Wide Range Users make Error");
-
-        Map<Integer, ArrayList<Integer>> reverseMap = new HashMap<>(
-                UserEvaluation.entrySet().stream()
-                        .collect(Collectors.groupingBy(Map.Entry::getValue)).values().stream()
-                        .collect(Collectors.toMap(
-                                item -> item.get(0).getValue(),
-                                item -> new ArrayList<>(
-                                        item.stream()
-                                                .map(Map.Entry::getKey)
-                                                .collect(Collectors.toList())
-                                ))
-                        ));
-        reverseMap.forEach((range,usersError) -> calculateMAE(range,errorRecords,usersError));
     }
 
     public static void calculateMAE(Integer range, Table<Integer, Integer, Double> errorRecords, ArrayList<Integer> Users)
@@ -76,6 +89,8 @@ public class WideRageUsers {
             //System.out.println("User:"+user+", Errors:"+errorRecords.row(user));
         }
         System.out.println("range:"+range+", MAE:"+(SumMAE/NumRates)+", Number Of Rates:"+NumRates+", Number of Users:"+Users.size());
+
+        MAE.put(fold,range,SumMAE/NumRates);
     }
 
 //    public static void getErrorStatistics(Integer rowKey, Table errorRecords, Map<Integer,Double> UserEvaluationError)
